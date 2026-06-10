@@ -59,4 +59,3 @@ source_url: https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/
 相关链接：
 
 - https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/
-

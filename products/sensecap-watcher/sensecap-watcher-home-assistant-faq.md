@@ -68,4 +68,3 @@ source_url: https://wiki.seeedstudio.com/integrate_watcher_to_ha/
 相关链接：
 
 - https://wiki.seeedstudio.com/sensecap_app_introduction/
-

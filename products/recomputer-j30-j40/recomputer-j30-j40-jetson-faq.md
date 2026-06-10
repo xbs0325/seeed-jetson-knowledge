@@ -68,4 +68,3 @@ source_url: https://wiki.seeedstudio.com/reComputer_J30_40_with_Jetson_getting_s
 相关链接：
 
 - https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack/
-
