@@ -36,7 +36,6 @@ source_url: https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/
 相关链接：
 
 - https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/
-
 ### 问题：Type-C 和电池供电分别是多少电压？
 
 简洁答案：Type-C 输入为 5V；电池输入为 3.7V。3V3 引脚是板载稳压输出，官方引脚说明中标注可输出约 700mA。外部电源接 5V 引脚时应按官方说明加入二极管隔离，避免反灌。

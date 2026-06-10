@@ -46,7 +46,6 @@ source_url: https://wiki.seeedstudio.com/h68kv2_datasheet/
 相关链接：
 
 - https://wiki.seeedstudio.com/h68kv2_datasheet/
-
 ### 问题：各网口如何区分？
 
 简洁答案：官方快速开始中将 ETH0 作为 WAN 口，ETH1/ETH2/ETH3 作为 LAN 口。硬件概览中 ETH0/ETH1 为 1G 以太网，ETH2/ETH3 支持 2.5G/1G 以太网。

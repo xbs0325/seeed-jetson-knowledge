@@ -45,7 +45,6 @@ source_url: https://wiki.seeedstudio.com/reComputer_J30_40_with_Jetson_getting_s
 相关链接：
 
 - https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack/
-
 ### 问题：电源要求是什么？
 
 简洁答案：J401 carrier board 支持 9-19V DC 输入。具体套装是否包含电源适配器以商品页/销售页面为准；客服应提醒买家使用稳定、功率足够的适配器，避免因电压跌落导致启动异常或负载下重启。

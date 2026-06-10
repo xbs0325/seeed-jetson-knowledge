@@ -27,7 +27,6 @@ source_url: https://wiki.seeedstudio.com/integrate_watcher_to_ha/
 相关链接：
 
 - https://wiki.seeedstudio.com/sensecap_app_introduction/
-
 ### 问题：首次绑定 Watcher 需要什么步骤？
 
 简洁答案：在 Watcher 上通过滚轮进入绑定二维码界面，用 SenseCraft APP 扫码添加设备；绑定过程需要手机蓝牙权限，随后选择 2.4GHz Wi-Fi 并输入密码完成联网。
