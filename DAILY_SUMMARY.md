@@ -1,54 +1,38 @@
-# DAILY_SUMMARY - 2026-06-10
+# DAILY_SUMMARY - 2026-06-11
 
 ## 今日新增内容
 
 ### NVIDIA 官方套件 / 模组
 
-- `official_kit` [JetPack 7.2 / Jetson Linux r39.2 官方发布要点](docs/official_kit/common/jetpack-7-2-l4t-r39-2-release.md)
-  - 收录 JetPack 7.2、L4T 39.2、Ubuntu 24.04、kernel 6.8、CUDA 13.2.1、TensorRT 10.16.2、统一 ISO 安装方式、AGX Orin 32GB MAXN_SUPER。
-- `official_kit` [Jetson Orin Nano Developer Kit：JetPack 7.2 ISO 安装方式](docs/official_kit/jetson-orin-nano-devkit/jetpack-7-2-iso-install.md)
-  - 记录 JetPack 7.2 不再提供 SD Card image，需使用 USB ISO 安装到 microSD/NVMe，并要求 JetPack 6.x generation UEFI/QSPI firmware。
-- `official_kit` [Jetson AGX Orin Developer Kit：JetPack 7.2 BSP 更新路径](docs/official_kit/jetson-agx-orin-devkit/jetpack-7-2-iso-update.md)
-  - 记录 AGX Orin Developer Kit 使用 Jetson ISO 更新到 L4T r39.2 的前提与路径。
-- `official_kit` [JetPack 6 GPIO：输出不生效与 pinmux/BCT 关系](docs/official_kit/common/jetpack-6-gpio-pinmux.md)
-  - 收录 JetPack 6 upstream GPIO driver、pinmux/BCT、libgpiod 与 Jetson.GPIO 注意事项。
+- `official_kit` [JetPack 6.2.1 / Jetson Linux r36.4.4 官方发布要点](docs/official_kit/common/jetpack-6-2-1-l4t-r36-4-4-release.md)
+  - 收录 NVIDIA JetPack 6.2.1 / L4T 36.4.4 维护版本、Docker v28.0.x 兼容性修复、SDK Manager 刷机修复、HSM boot image signing、Argus 与 GStreamer 更新。
+  - 明确该条目仅适用于 NVIDIA 官方 Orin 模组/开发套件；Seeed 设备需另核对 Seeed BSP/镜像。
 
 ### Seeed Jetson 盒子 / 载板 / 整机
 
-- `seeed_device` [Seeed reComputer J401/J301 系列刷 JetPack](docs/seeed_device/recomputer/recomputer-j401-flash-jetpack.md)
-  - 收录 J401/J301 预装 JetPack 5.1.3、Seeed 刷机包、Force Recovery、Hynix DRAM/JetPack 5.1.3 注意事项。
-- `seeed_device` [Seeed reComputer Super：JetPack 6.2 与硬件要点](docs/seeed_device/recomputer/recomputer-super-jetpack-6-2.md)
-  - 收录 reComputer Super JetPack 6.2、接口、供电、SHA256 校验与 Seeed initrd flash。
-- `seeed_device` [Seeed reComputer Industrial：预装系统、刷机与工业接口](docs/seeed_device/recomputer-industrial/recomputer-industrial-getting-started.md)
-  - 收录 Industrial 系列预装 JetPack 5.1.3、PoE、DI/DO、RS485、CAN、TPM、刷机边界。
-- `seeed_device` [Seeed reServer Industrial：预装系统、刷机与硬件接口](docs/seeed_device/reserver/reserver-industrial-getting-started.md)
-  - 收录 reServer Industrial JetPack 5.1.1、5x GbE/4x PoE、SATA、COM、DI/DO、CAN 与刷机要求。
-- `seeed_device` [reServer Industrial J4012：JetPack 6 PoE/GPIO 排查记录](docs/seeed_device/reserver/reserver-industrial-j4012-jetpack-6-gpio-poe.md)
-  - 收录 Seeed 论坛 JetPack 6 下 PoE/GPIO libgpiod 示例，标记为 need_review。
-- `seeed_device` [reComputer Robotics J401：JetPack 6.2 与接口使用要点](docs/seeed_device/recomputer-robotics/robotics-j401-interfaces.md)
-  - 收录 Robotics J401 CAN、UART、I2C、GMSL、风扇、USB 与 JetPack 6.2 镜像要点。
+- `seeed_device` [Seeed reComputer：JetPack 5.1.3 到 6.2 OTA 更新](docs/seeed_device/recomputer/recomputer-ota-jetpack-5-1-3-to-6-2.md)
+  - 收录 reComputer mini J4012 JP5.1.3 -> JP6.2 OTA payload、SHA256、设备端 OTA 步骤、版本验证命令，以及 Orin NX reComputer mini 不要启用 MAXN SUPER 的散热警告。
+- `seeed_device` [Seeed Jetson Flash Center：图形化下载与刷机流程](docs/seeed_device/common/seeed-jetson-flash-center.md)
+  - 收录 Seeed Flash Center 下载、SHA256 校验、解压 BSP、Recovery mode 检测和 Start Flash 流程；强调只适用于工具支持列表中的 Seeed Jetson 设备。
+- `seeed_device` [Seeed Jetson AGX Orin 32GB H01 Kit：刷 JetPack 与外设驱动](docs/seeed_device/agx-orin-h01/agx-orin-32gb-h01-flash-jetpack.md)
+  - 收录 H01 Kit 预装 JetPack 5.1.4、默认账号、JP5/JP6 外设驱动、Recovery USB ID、eMMC 刷机示例和 JP5.1.1 PCN overlay 异常处理。
 
 ### 通用与 FAQ
 
-- `common` [BSP 已匹配后安装 JetPack SDK 组件](docs/common/install-jetpack-components-after-bsp.md)
-  - 区分 BSP 与 SDK 组件，说明 `sudo apt install nvidia-jetpack` 只适合 BSP 已匹配后的组件安装。
-- 新增 5 条 FAQ：
-  - [Orin Nano JetPack 7.2 无 SD 卡镜像](docs/faq/orin-nano-jetpack-7-2-no-sd-card-image.md)
-  - [Seeed 设备是否可直接刷 NVIDIA 官方镜像](docs/faq/seeed-device-use-nvidia-official-image.md)
-  - [JetPack 6 GPIO sysfs 缺失](docs/faq/jetpack-6-gpio-sysfs-missing.md)
-  - [reServer Industrial J4012 JetPack 6 PoE](docs/faq/reserver-industrial-j4012-poe-jetpack-6.md)
-  - [Robotics J401 CAN transceiver 唤醒](docs/faq/recomputer-robotics-j401-can-wakeup.md)
+- 新增 1 条 FAQ：
+  - `seeed_device` [Seeed Jetson 设备刷机时 USB timeout、NFS mount failure、tegrarcm_v2 找不到或首次启动卡在 OEM 配置怎么办？](docs/faq/seeed-jetson-flashing-usb-nfs-errors.md)
 
 ## 今日更新内容
 
-- 新增根目录 [INDEX.md](INDEX.md)，按 NVIDIA 官方套件、Seeed 设备、问题类型、FAQ、待复核内容建立索引。
+- 更新根目录 [INDEX.md](INDEX.md)，把今日新增资料按 NVIDIA 官方套件、Seeed 设备、问题类型和 FAQ 加入索引。
+- 更新 `unknown` [待复核：Seeed J401/J501 是否支持 JetPack 7.2](docs/unknown_review/seeed-j401-jetpack-7-2-support.md)，补充 2026-06-11 论坛复查记录，状态保持 need_review。
 
 ## 需要人工复核内容
 
 - `unknown` [待复核：Seeed J401/J501 是否支持 JetPack 7.2](docs/unknown_review/seeed-j401-jetpack-7-2-support.md)
-  - NVIDIA 已发布 JetPack 7.2，但当前未确认 Seeed J401/J501 官方 JetPack 7.2 镜像/BSP。
+  - 今日复查 Seeed 论坛原帖后仍未确认 Seeed J401/J501 官方 JetPack 7.2 镜像/BSP；保持 need_review。
 - `seeed_device` [reServer Industrial J4012：JetPack 6 PoE/GPIO 排查记录](docs/seeed_device/reserver/reserver-industrial-j4012-jetpack-6-gpio-poe.md)
-  - 来源为 Seeed 论坛答复，建议结合最新 Wiki/BSP 复核后再作为正式售后脚本。
+  - 来源为 Seeed 论坛答复，仍建议结合最新 Wiki/BSP 复核后再作为正式售后脚本。
 - `seeed_device` [reServer Industrial J4012 升级 JetPack 6 后 PoE 网口不供电怎么办？](docs/faq/reserver-industrial-j4012-poe-jetpack-6.md)
   - FAQ 状态为 need_review。
 
