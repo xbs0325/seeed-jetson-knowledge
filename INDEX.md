@@ -8,6 +8,7 @@
 
 | 内容 | 产品 | 适用平台类型 | JetPack / L4T |
 | --- | --- | --- | --- |
+| [JetPack 6.2.2 / Jetson Linux r36.5 官方发布要点](docs/official_kit/common/jetpack-6-2-2-l4t-r36-5-release.md) | Jetson Orin family | official_kit | 6.2.2 / 36.5 |
 | [JetPack 7.2 / Jetson Linux r39.2 官方发布要点](docs/official_kit/common/jetpack-7-2-l4t-r39-2-release.md) | Jetson Orin family | official_kit | 7.2 / 39.2 |
 | [Jetson Orin Nano Developer Kit：JetPack 7.2 ISO 安装方式](docs/official_kit/jetson-orin-nano-devkit/jetpack-7-2-iso-install.md) | Jetson Orin Nano Developer Kit | official_kit | 7.2 / 39.2 |
 | [Jetson AGX Orin Developer Kit：JetPack 7.2 BSP 更新路径](docs/official_kit/jetson-agx-orin-devkit/jetpack-7-2-iso-update.md) | Jetson AGX Orin Developer Kit | official_kit | 7.2 / 39.2 |
@@ -18,11 +19,13 @@
 | 内容 | 产品 | 适用平台类型 | JetPack / L4T |
 | --- | --- | --- | --- |
 | [Seeed reComputer J401/J301 系列刷 JetPack](docs/seeed_device/recomputer/recomputer-j401-flash-jetpack.md) | reComputer J3010/J3011/J4011/J4012 | seeed_device | 5.1.x/6.x |
+| [Seeed Linux_for_Tegra：JetPack 6.2 BSP 与升级边界](docs/seeed_device/recomputer/seeed-linux-for-tegra-jetpack-6-2-bsp.md) | Seeed Jetson reComputer/reServer Linux_for_Tegra BSP | seeed_device | 6.2 / 36.4.3 |
 | [Seeed reComputer Super：JetPack 6.2 与硬件要点](docs/seeed_device/recomputer/recomputer-super-jetpack-6-2.md) | reComputer Super J3010/J3011/J4011/J4012 | seeed_device | 6.2 / 36.4.3 |
 | [Seeed reComputer Industrial：预装系统、刷机与工业接口](docs/seeed_device/recomputer-industrial/recomputer-industrial-getting-started.md) | reComputer Industrial J201/J301/J401 | seeed_device | 5.1.3/6.x |
 | [Seeed reServer Industrial：预装系统、刷机与硬件接口](docs/seeed_device/reserver/reserver-industrial-getting-started.md) | reServer Industrial J301/J401 | seeed_device | 5.1.1 / 35.3.1 |
 | [reServer Industrial J4012：JetPack 6 PoE/GPIO 排查记录](docs/seeed_device/reserver/reserver-industrial-j4012-jetpack-6-gpio-poe.md) | reServer Industrial J4012 | seeed_device | 6.x / 36.x |
 | [reComputer Robotics J401：JetPack 6.2 与接口使用要点](docs/seeed_device/recomputer-robotics/robotics-j401-interfaces.md) | reComputer Robotics J401 | seeed_device | 6.2 / 36.4.3 |
+| [Seeed reComputer Robotics J501 / J501 Mini：JetPack 6.2.1 与接口要点](docs/seeed_device/recomputer-robotics/robotics-j501-jetpack-6-2-1.md) | reComputer Robotics J501 / J501 Mini | seeed_device | 6.2.1 / 36.4.4 |
 
 ## 通用条目索引
 
@@ -34,24 +37,30 @@
 
 ### 刷机 / 系统安装 / JetPack / L4T
 
+- [JetPack 6.2.2 / Jetson Linux r36.5 官方发布要点](docs/official_kit/common/jetpack-6-2-2-l4t-r36-5-release.md) - `official_kit`
 - [JetPack 7.2 / Jetson Linux r39.2 官方发布要点](docs/official_kit/common/jetpack-7-2-l4t-r39-2-release.md) - `official_kit`
 - [Jetson Orin Nano Developer Kit：JetPack 7.2 ISO 安装方式](docs/official_kit/jetson-orin-nano-devkit/jetpack-7-2-iso-install.md) - `official_kit`
 - [Jetson AGX Orin Developer Kit：JetPack 7.2 BSP 更新路径](docs/official_kit/jetson-agx-orin-devkit/jetpack-7-2-iso-update.md) - `official_kit`
 - [Seeed reComputer J401/J301 系列刷 JetPack](docs/seeed_device/recomputer/recomputer-j401-flash-jetpack.md) - `seeed_device`
+- [Seeed Linux_for_Tegra：JetPack 6.2 BSP 与升级边界](docs/seeed_device/recomputer/seeed-linux-for-tegra-jetpack-6-2-bsp.md) - `seeed_device`
 - [Seeed reComputer Super：JetPack 6.2 与硬件要点](docs/seeed_device/recomputer/recomputer-super-jetpack-6-2.md) - `seeed_device`
 - [Seeed reComputer Industrial：预装系统、刷机与工业接口](docs/seeed_device/recomputer-industrial/recomputer-industrial-getting-started.md) - `seeed_device`
 - [Seeed reServer Industrial：预装系统、刷机与硬件接口](docs/seeed_device/reserver/reserver-industrial-getting-started.md) - `seeed_device`
+- [Seeed reComputer Robotics J501 / J501 Mini：JetPack 6.2.1 与接口要点](docs/seeed_device/recomputer-robotics/robotics-j501-jetpack-6-2-1.md) - `seeed_device`
 
 ### GPIO / BSP / 设备树 / 外设接口
 
 - [JetPack 6 GPIO：输出不生效与 pinmux/BCT 关系](docs/official_kit/common/jetpack-6-gpio-pinmux.md) - `official_kit`
+- [Seeed Linux_for_Tegra：JetPack 6.2 BSP 与升级边界](docs/seeed_device/recomputer/seeed-linux-for-tegra-jetpack-6-2-bsp.md) - `seeed_device`
 - [reServer Industrial J4012：JetPack 6 PoE/GPIO 排查记录](docs/seeed_device/reserver/reserver-industrial-j4012-jetpack-6-gpio-poe.md) - `seeed_device`
 - [reComputer Robotics J401：JetPack 6.2 与接口使用要点](docs/seeed_device/recomputer-robotics/robotics-j401-interfaces.md) - `seeed_device`
+- [Seeed reComputer Robotics J501 / J501 Mini：JetPack 6.2.1 与接口要点](docs/seeed_device/recomputer-robotics/robotics-j501-jetpack-6-2-1.md) - `seeed_device`
 - [reComputer Super J401 默认镜像是否带 GMSL？Arducam GMSL IMX219 是否可用？](docs/faq/recomputer-super-j401-gmsl-arducam-imx219.md) - `seeed_device`
 
 ### CUDA / TensorRT / SDK 组件
 
 - [BSP 已匹配后安装 JetPack SDK 组件](docs/common/install-jetpack-components-after-bsp.md) - `common`
+- [JetPack 6.2.2 / Jetson Linux r36.5 官方发布要点](docs/official_kit/common/jetpack-6-2-2-l4t-r36-5-release.md) - `official_kit`
 
 ### 资料 / 规格书 / 文档
 
@@ -66,6 +75,7 @@
 - [reComputer Robotics J401 配好 CAN bitrate 后仍不能通信，需要做什么？](docs/faq/recomputer-robotics-j401-can-wakeup.md) - `seeed_device`
 - [reComputer Super J401 默认镜像是否带 GMSL？Arducam GMSL IMX219 是否可用？](docs/faq/recomputer-super-j401-gmsl-arducam-imx219.md) - `seeed_device`
 - [Jetson AGX Orin 64GB 官方开发套件有没有规格书？](docs/faq/agx-orin-64gb-developer-kit-datasheet.md) - `official_kit`
+- [Seeed Jetson 设备刷 JetPack 6.2 后，执行 apt upgrade 导致 L4T 内核/bootloader 包失败怎么办？](docs/faq/seeed-jetpack-6-apt-upgrade-l4t-kernel-conflict.md) - `seeed_device`
 
 ## 待人工复核
 

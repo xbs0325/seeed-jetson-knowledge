@@ -1,3 +1,46 @@
+# DAILY_SUMMARY - 2026-06-12
+
+## 今日新增内容
+
+### NVIDIA 官方套件 / JetPack / L4T
+
+- `official_kit` [JetPack 6.2.2 / Jetson Linux r36.5 官方发布要点](docs/official_kit/common/jetpack-6-2-2-l4t-r36-5-release.md)
+  - 收录 NVIDIA JetPack 6.2.2 / Jetson Linux 36.5：Orin production modules and Developer Kits 支持、kernel 5.15、Ubuntu 22.04、security/known issue 修复、Jetson Platform Services 2.0。
+  - 明确 NVIDIA 官方 APT/SDK Manager/manual flash 路径只适用于官方支持硬件；Seeed 设备需另查 Seeed BSP/镜像。
+
+### Seeed Jetson 设备 / Robotics / AGX Orin
+
+- `seeed_device` [Seeed reComputer Robotics J501 / J501 Mini：JetPack 6.2.1 与接口要点](docs/seeed_device/recomputer-robotics/robotics-j501-jetpack-6-2-1.md)
+  - 收录 Seeed J501/J501 Mini Wiki：JetPack 6.2.1、AGX Orin 32GB/64GB、GMSL2、CAN-FD、10GbE/1GbE、19-48V 输入、Force Recovery 与 Seeed initrd flash。
+
+### Seeed Jetson 设备 / BSP / OTA
+
+- `seeed_device` [Seeed Linux_for_Tegra：JetPack 6.2 BSP 与升级边界](docs/seeed_device/recomputer/seeed-linux-for-tegra-jetpack-6-2-bsp.md)
+  - 收录 Seeed Linux_for_Tegra r36.4.3 README：该仓库是 Seeed reComputer/reServer 默认固件源码，基于 NVIDIA JetPack 6.2 并加入 Seeed 驱动、设备树和板级配置。
+  - 记录支持硬件、Seeed 配置文件、initrd flash、OTA package 生成与保留文件注意事项。
+
+### FAQ / apt upgrade / BSP 冲突
+
+- `seeed_device` [Seeed Jetson 设备刷 JetPack 6.2 后，执行 apt upgrade 导致 L4T 内核/bootloader 包失败怎么办？](docs/faq/seeed-jetpack-6-apt-upgrade-l4t-kernel-conflict.md)
+  - 收录 Seeed-Studio/Linux_for_Tegra issue #41：Seeed 维护者说明完整 `apt upgrade` 可能更新 NVIDIA 官方 BSP 包并与 Seeed 自定义 BSP 冲突；如必须升级，需先 hold 指定 L4T 内核/DTB/显示包。
+
+## 今日更新内容
+
+- 更新 [INDEX.md](INDEX.md)，按 NVIDIA 官方套件、Seeed 设备、问题类型和 FAQ 索引新增 4 条内容。
+
+## 需要人工复核内容
+
+- `seeed_device` [Seeed Jetson 设备刷 JetPack 6.2 后，执行 apt upgrade 导致 L4T 内核/bootloader 包失败怎么办？](docs/faq/seeed-jetpack-6-apt-upgrade-l4t-kernel-conflict.md)
+  - 来源为 Seeed GitHub issue，状态为 `need_review`；正式售后建议按具体型号复核最新 Wiki/固件版本。
+- `unknown` [待复核：Seeed J401/J501 是否支持 JetPack 7.2](docs/unknown_review/seeed-j401-jetpack-7-2-support.md)
+  - 本次新增 J501 的 JetPack 6.2.1 资料，但未确认 Seeed J401/J501 已支持 JetPack 7.2。
+
+## 已标记过时内容
+
+- 今日未发现需标记为 outdated 的已有条目。
+
+---
+
 # DAILY_SUMMARY - 2026-06-11
 
 ## 今日新增内容
