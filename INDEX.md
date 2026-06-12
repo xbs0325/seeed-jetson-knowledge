@@ -53,6 +53,10 @@
 
 - [BSP 已匹配后安装 JetPack SDK 组件](docs/common/install-jetpack-components-after-bsp.md) - `common`
 
+### 资料 / 规格书 / 文档
+
+- [Jetson AGX Orin 64GB 官方开发套件有没有规格书？](docs/faq/agx-orin-64gb-developer-kit-datasheet.md) - `official_kit`
+
 ### FAQ
 
 - [JetPack 7.2 为什么找不到 Jetson Orin Nano Developer Kit 的 SD 卡镜像？](docs/faq/orin-nano-jetpack-7-2-no-sd-card-image.md) - `official_kit`
@@ -61,6 +65,7 @@
 - [reServer Industrial J4012 升级 JetPack 6 后 PoE 网口不供电怎么办？](docs/faq/reserver-industrial-j4012-poe-jetpack-6.md) - `seeed_device`
 - [reComputer Robotics J401 配好 CAN bitrate 后仍不能通信，需要做什么？](docs/faq/recomputer-robotics-j401-can-wakeup.md) - `seeed_device`
 - [reComputer Super J401 默认镜像是否带 GMSL？Arducam GMSL IMX219 是否可用？](docs/faq/recomputer-super-j401-gmsl-arducam-imx219.md) - `seeed_device`
+- [Jetson AGX Orin 64GB 官方开发套件有没有规格书？](docs/faq/agx-orin-64gb-developer-kit-datasheet.md) - `official_kit`
 
 ## 待人工复核
 

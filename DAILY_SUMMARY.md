@@ -7,6 +7,11 @@
 - `seeed_device` [reComputer Super J401 默认镜像是否带 GMSL？Arducam GMSL IMX219 是否可用？](docs/faq/recomputer-super-j401-gmsl-arducam-imx219.md)
   - 收录 Zoho 客户案例（Beewise，SKU 100090211）：Super J401 JetPack 6.2 无 Seeed GMSL BSP；Arducam GMSL 为第三方联调；Robotics J401 为 Seeed GMSL 官方路径。
 
+### FAQ / 资料 / 官方套件
+
+- `official_kit` [Jetson AGX Orin 64GB 官方开发套件有没有规格书？](docs/faq/agx-orin-64gb-developer-kit-datasheet.md)
+  - 收录天猫/淘宝咨询：NVIDIA 官方 Developer Kit 规格资料在官网与 Jetson Download Center；附可复制中文简答与官方链接。
+
 ---
 
 # DAILY_SUMMARY - 2026-06-10
