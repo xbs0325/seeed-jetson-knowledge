@@ -244,9 +244,17 @@
 
 | 情况 | 操作 |
 | --- | --- |
-| 核对确认的新结论 | 写入 `docs/`，更新 `INDEX.md` |
-| 不确定、有争议 | 写入 `docs/unknown_review/`，标记待复核 |
-| 当日新增汇总 | 可参考 `DAILY_SUMMARY.md` 格式 |
+| 核对确认的新结论 | 写入 `docs/faq/` 或 `docs/seeed_device/` 等，标 `status: active`，更新 `INDEX.md` |
+| 有初步 Q&A、待人工确认 | 写入 `docs/inbox/`，标 `need_review` |
+| 社交媒体仅问题、无可靠答案 | 写入 `docs/community_questions/`，跟踪 `last_checked` |
+| 有部分背景但仍需复核 | 写入 `docs/unknown_review/` |
+| 当日收集汇总 | 可参考 `DAILY_SUMMARY.md`（**不作事实依据**） |
+
+**所有条目必须含 `source_url` 或 `source_links`。**
+
+客服回答时**优先** `INDEX.md` 中 `active` 条目；引用 `inbox` / `community_questions` / `unknown_review` 须标注置信度。
+
+分区说明见 [`docs/README.md`](../docs/README.md)；清洗审计见 [`KNOWLEDGE_AUDIT.md`](../KNOWLEDGE_AUDIT.md)。收集 Automation 见 [`automation-collector.md`](automation-collector.md)（当前建议关闭）。
 
 ---
 

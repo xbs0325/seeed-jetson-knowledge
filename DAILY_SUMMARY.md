@@ -1,5 +1,17 @@
 # DAILY_SUMMARY - 2026-06-12
 
+## 知识库清洗（结构重组）
+
+- 新增 [`KNOWLEDGE_AUDIT.md`](KNOWLEDGE_AUDIT.md)：标出 `need_review` 误用、Classic/Super 刷机混用等风险。
+- 新增分区：`docs/inbox/`（Q&A 草稿）、`docs/community_questions/`（开放问题）、`docs/README.md`、`_templates/`。
+- 新增 [`instructions/automation-collector.md`](instructions/automation-collector.md)（社交媒体收集，**建议 Automation 暂停**）。
+- 更新 `INDEX.md`：拆分已确认 / 待复核 / inbox；Classic 刷机文档标题注明不含 Super。
+- inbox 草稿：Super 板级名、apt 装浏览器 vs apt upgrade。
+
+---
+
+# DAILY_SUMMARY - 2026-06-12（历史条目）
+
 ## 今日新增内容
 
 ### FAQ / 电商标题辨析
