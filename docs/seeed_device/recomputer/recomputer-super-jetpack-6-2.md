@@ -47,6 +47,8 @@ status: active
 sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --network usb0 --showlogs
 ```
 
+自编译刷机板级名：**`recomputer-orin-super-j401`**（不是 Classic 的 `recomputer-orin-j401`）。
+
 ## 售后提示
 
 客户询问 reComputer Super 能否直接刷 NVIDIA JetPack 7.2 ISO 时，应标记为需核对 Seeed 是否发布对应镜像/BSP。当前 Seeed Wiki 明确提供的是 JetPack 6.2 的设备镜像与流程。

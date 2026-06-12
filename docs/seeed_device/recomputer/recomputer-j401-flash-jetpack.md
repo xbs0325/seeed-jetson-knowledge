@@ -15,12 +15,13 @@ source_url: https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack/
 status: active
 ---
 
-# Seeed reComputer J401/J301 系列刷 JetPack
+# Seeed reComputer Classic J401/J301 系列刷 JetPack
 
 ## 适用范围
 
-- Seeed reComputer J3010、J3011、J4011、J4012。
-- 这些设备内部使用 J401 carrier board，刷机步骤相同。
+- Seeed reComputer **Classic** J3010、J3011、J4011、J4012（**不含 Super**）。
+- Classic J401 carrier board，刷机步骤相同。
+- **Super** 系列见 [`recomputer-super-jetpack-6-2.md`](recomputer-super-jetpack-6-2.md)。
 - 适用平台类型：`seeed_device`。
 
 ## 关键硬件与系统信息

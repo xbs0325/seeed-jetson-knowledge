@@ -16,5 +16,5 @@
 ## 设备名参数
 
 - `--external-device nvme0n1p1`：外置 NVMe 分区名
-- `recomputer-orin-j401` / `jetson-orin-nano-devkit-super`：**板级配置名**（与载板/BSP 绑定）
+- `recomputer-orin-j401`（Classic）/ `recomputer-orin-super-j401`（Super）/ `jetson-orin-nano-devkit-super`（NVIDIA DevKit）：**板级名不可混用**
 - `internal` / `external`：启动链模式，不是产品型号
