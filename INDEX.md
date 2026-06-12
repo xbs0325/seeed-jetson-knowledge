@@ -2,7 +2,7 @@
 
 > 收录范围：仅 Jetson 相关资料。NVIDIA 官方开发套件、Seeed Jetson 盒子/载板/整机、通用 Jetson 软件问题需分别标注适用平台类型。
 >
-> **仓库结构**：指令层见 [`AGENTS.md`](AGENTS.md) 与 [`instructions/`](instructions/)；本文件及 `docs/` 为知识库层。
+> **仓库结构**：指令层 [`AGENTS.md`](AGENTS.md)、[`instructions/`](instructions/)；记忆层 [`memory/`](memory/)；本文件及 `docs/` 为知识库层。
 
 ## 按 NVIDIA 官方套件索引
 
