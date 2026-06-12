@@ -2,6 +2,16 @@
 
 ## 今日新增内容
 
+### FAQ / 电商标题辨析
+
+- `seeed_device` [淘宝标题「官方核心模组 开发套件」是 NVIDIA 官方套件还是 Seeed 产品？](docs/faq/taobao-title-official-module-vs-nvidia-devkit.md)
+  - 收录：搜索优化标题易误判；「官方核心模组 + 开发套件」多为 NVIDIA 模组 + Seeed 载板（如 Super J4012），刷机走 Seeed Wiki 而非 NVIDIA DevKit。
+
+### 记忆层
+
+- `memory/workflow-notes.md`：淘宝/天猫标题辨析流程
+- `memory/common-mistakes.md`：官方套件 vs Seeed 套件、刷机包混用误区
+
 ### NVIDIA 官方套件 / JetPack / L4T
 
 - `official_kit` [JetPack 6.2.2 / Jetson Linux r36.5 官方发布要点](docs/official_kit/common/jetpack-6-2-2-l4t-r36-5-release.md)
