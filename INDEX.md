@@ -47,6 +47,7 @@
 - [JetPack 6 GPIO：输出不生效与 pinmux/BCT 关系](docs/official_kit/common/jetpack-6-gpio-pinmux.md) - `official_kit`
 - [reServer Industrial J4012：JetPack 6 PoE/GPIO 排查记录](docs/seeed_device/reserver/reserver-industrial-j4012-jetpack-6-gpio-poe.md) - `seeed_device`
 - [reComputer Robotics J401：JetPack 6.2 与接口使用要点](docs/seeed_device/recomputer-robotics/robotics-j401-interfaces.md) - `seeed_device`
+- [reComputer Super J401 默认镜像是否带 GMSL？Arducam GMSL IMX219 是否可用？](docs/faq/recomputer-super-j401-gmsl-arducam-imx219.md) - `seeed_device`
 
 ### CUDA / TensorRT / SDK 组件
 
@@ -59,6 +60,7 @@
 - [JetPack 6 上为什么找不到 /sys/class/gpio，或者 Jetson.GPIO 输出不生效？](docs/faq/jetpack-6-gpio-sysfs-missing.md) - `common`
 - [reServer Industrial J4012 升级 JetPack 6 后 PoE 网口不供电怎么办？](docs/faq/reserver-industrial-j4012-poe-jetpack-6.md) - `seeed_device`
 - [reComputer Robotics J401 配好 CAN bitrate 后仍不能通信，需要做什么？](docs/faq/recomputer-robotics-j401-can-wakeup.md) - `seeed_device`
+- [reComputer Super J401 默认镜像是否带 GMSL？Arducam GMSL IMX219 是否可用？](docs/faq/recomputer-super-j401-gmsl-arducam-imx219.md) - `seeed_device`
 
 ## 待人工复核
 

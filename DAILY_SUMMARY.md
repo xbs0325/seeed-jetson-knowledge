@@ -1,3 +1,14 @@
+# DAILY_SUMMARY - 2026-06-11
+
+## 今日新增内容
+
+### FAQ / 摄像头 / GMSL
+
+- `seeed_device` [reComputer Super J401 默认镜像是否带 GMSL？Arducam GMSL IMX219 是否可用？](docs/faq/recomputer-super-j401-gmsl-arducam-imx219.md)
+  - 收录 Zoho 客户案例（Beewise，SKU 100090211）：Super J401 JetPack 6.2 无 Seeed GMSL BSP；Arducam GMSL 为第三方联调；Robotics J401 为 Seeed GMSL 官方路径。
+
+---
+
 # DAILY_SUMMARY - 2026-06-10
 
 ## 今日新增内容
