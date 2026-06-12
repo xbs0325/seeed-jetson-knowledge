@@ -9,7 +9,6 @@ tags:
   - seeed
   - j401
   - bsp
-  - need-review
 date: 2026-06-10
 source_url: https://forum.seeedstudio.com/t/nvidia-has-officially-announced-jetpack-7-2-june-1-2026-any-plans-for-j401-agx-orin-32gb-support/295471
 status: need_review

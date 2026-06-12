@@ -240,25 +240,33 @@
 
 ---
 
-## 10. 知识库维护
+## 10. 知识库维护（本仓库 = 库 1）
 
 | 情况 | 操作 |
 | --- | --- |
-| 核对确认的新结论 | 写入 `docs/faq/` 或 `docs/seeed_device/` 等，标 `status: active`，更新 `INDEX.md` |
-| 有初步 Q&A、待人工确认 | 写入 `docs/inbox/`，标 `need_review` |
-| 社交媒体仅问题、无可靠答案 | 写入 `docs/community_questions/`，跟踪 `last_checked` |
-| 有部分背景但仍需复核 | 写入 `docs/unknown_review/` |
-| 当日收集汇总 | 可参考 `DAILY_SUMMARY.md`（**不作事实依据**） |
+| 核对确认的新结论 | `docs/faq/` 等，`status: active`，更新 `INDEX.md` |
+| 待用户确认 | `docs/staging/`，`need_review` |
+| 长期约定 | `memory/` |
+| 产品建议 / 开放问题（无答案） | `cases/` 标 `export_to_collect`；内容进 **库 2** |
+| 结案记录 | 每次写入 `cases/` |
 
 **所有条目必须含 `source_url` 或 `source_links`。**
 
-客服回答时**优先** `INDEX.md` 中 `active` 条目；引用 `inbox` / `community_questions` / `unknown_review` 须标注置信度。
-
-分区说明见 [`docs/README.md`](../docs/README.md)；清洗审计见 [`KNOWLEDGE_AUDIT.md`](../KNOWLEDGE_AUDIT.md)。收集 Automation 见 [`automation-collector.md`](automation-collector.md)（当前建议关闭）。
+收集、资讯、反馈在 **独立仓库**，见 [`ARCHITECTURE.md`](../ARCHITECTURE.md)。本 Agent **不**运行每日收集/资讯 Automation。
 
 ---
 
-## 11. 快速检查清单（回复前自检）
+## 11. 支持结案闭环（每次必做）
+
+支持对话告一段落时：
+
+1. 用 [`cases/_case-template.md`](../cases/_case-template.md) 写结案
+2. 开 **draft PR**（可合并知识更新 + case 于同一 PR）
+3. 在回复末尾 **对你（内部）** 简述：写了哪些文件、是否需库 2 同步
+
+---
+
+## 12. 快速检查清单（回复前自检）
 
 - [ ] 已判断场景（电商 / 附件 / 英文邮件 / 转交）
 - [ ] 已检索本地 `INDEX.md` + `docs/`
@@ -269,3 +277,4 @@
 - [ ] 英文邮件：内部建议先行，外发英文待用户确认
 - [ ] 未编造参数、链接、支持状态
 - [ ] 新的长期约定已考虑写入 `memory/` 并开 PR
+- [ ] 结案已写 `cases/` 并考虑 `docs/faq` / `staging` 更新

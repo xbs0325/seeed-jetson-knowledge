@@ -1,6 +1,7 @@
 # 知识库清洗审计 — 2026-06-12
 
-> 自动化收集已建议暂停。本文档标出当前知识库中**可能影响技术支持准确性**的问题，并说明新的分区规则。
+> **已演进为三库架构**，见 [`ARCHITECTURE.md`](ARCHITECTURE.md)。本仓库（库 1）仅保留技术支持闭环；收集/资讯迁出。  
+> 下文为库 1 内容审计，仍有效。
 
 ## 一、当前统计
 
@@ -103,31 +104,10 @@
 
 ---
 
-## 五、新分区规则（本次落地）
+## 五、库 1 分区（当前本仓库）
 
-```
-docs/
-├── faq/                    # status:active — 客服主库（已人工确认）
-├── seeed_device/           # status:active — 设备资料
-├── official_kit/           # status:active
-├── common/                 # status:active
-├── inbox/                  # status:need_review — 收集到的 Q&A 草稿（有答案）
-├── community_questions/    # 仅问题 — 社交媒体开放问题，跟踪 resolution
-├── unknown_review/         # 有部分结论待复核的技术条目
-└── _templates/             # 条目模板
-```
-
-**客服 Agent（技术支持）：**
-
-- 优先读 `status: active` 的 `docs/faq`、`docs/seeed_device`、`docs/official_kit`、`docs/common`
-- `inbox`、`community_questions`、`unknown_review` 仅作参考，须标注「待复核 / 开放问题」
-- **不**自动把收集内容写入 `faq/` 或改 `memory/`
-
-**收集 Agent（暂停后可按新指令重启）：**
-
-- 社交媒体产品问题 → 总结到 `community_questions/`（仅问题）或 `inbox/`（有可靠 Q&A）
-- 每条必须含 `source_url` 或 `source_links`
-- 只开 draft PR，不 merge
+见 [`ARCHITECTURE.md`](ARCHITECTURE.md)。本库：`docs/faq` + `docs/staging` + `cases/` + `memory/`。  
+收集/反馈/资讯 → 库 2、库 3（`templates/` 有骨架）。
 
 ---
 
