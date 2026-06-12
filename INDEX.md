@@ -70,6 +70,7 @@
 
 - [JetPack 7.2 为什么找不到 Jetson Orin Nano Developer Kit 的 SD 卡镜像？](docs/faq/orin-nano-jetpack-7-2-no-sd-card-image.md) - `official_kit`
 - [Seeed reComputer/reServer/Robotics 能不能直接刷 NVIDIA 官方开发套件镜像或 SDK Manager 流程？](docs/faq/seeed-device-use-nvidia-official-image.md) - `seeed_device`
+- [淘宝标题「官方核心模组 开发套件」是 NVIDIA 官方套件还是 Seeed 产品？](docs/faq/taobao-title-official-module-vs-nvidia-devkit.md) - `seeed_device`
 - [JetPack 6 上为什么找不到 /sys/class/gpio，或者 Jetson.GPIO 输出不生效？](docs/faq/jetpack-6-gpio-sysfs-missing.md) - `common`
 - [reServer Industrial J4012 升级 JetPack 6 后 PoE 网口不供电怎么办？](docs/faq/reserver-industrial-j4012-poe-jetpack-6.md) - `seeed_device`
 - [reComputer Robotics J401 配好 CAN bitrate 后仍不能通信，需要做什么？](docs/faq/recomputer-robotics-j401-can-wakeup.md) - `seeed_device`
