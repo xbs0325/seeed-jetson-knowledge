@@ -7,11 +7,16 @@
 
 1. 核对 `source_url` / `source_links`
 2. 确认产品型号与 JetPack 版本
-3. 改 `status: active`，移动到 `docs/faq/`，更新 `INDEX.md`
+3. 改 `status: active`，写入 `docs/faq/`，更新 `INDEX.md`
+4. 删除本目录对应草稿
+
+## 已晋升（2026-06-12）
+
+| 原草稿 | 晋升至 |
+|--------|--------|
+| super-j4012-flash-board-name | [faq/recomputer-super-j4012-flash-board-name.md](../faq/recomputer-super-j4012-flash-board-name.md) |
+| seeed-jetson-apt-install-browser | [faq/seeed-jetson-install-browser-vs-apt-upgrade.md](../faq/seeed-jetson-install-browser-vs-apt-upgrade.md) |
 
 ## 当前草稿
 
-| 文件 | 主题 |
-|------|------|
-| [super-j4012-flash-board-name.md](super-j4012-flash-board-name.md) | Super 刷机板级名 vs Classic |
-| [seeed-jetson-apt-install-browser.md](seeed-jetson-apt-install-browser.md) | apt install 浏览器 vs apt upgrade |
+（暂无）

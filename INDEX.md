@@ -39,10 +39,15 @@
 ### 刷机 / 系统安装
 
 - [Seeed reComputer **Super** 刷机要点](docs/seeed_device/recomputer/recomputer-super-jetpack-6-2.md) - `seeed_device`
+- [Super 刷机板级名 `recomputer-orin-super-j401`](docs/faq/recomputer-super-j4012-flash-board-name.md) - `seeed_device`
 - [Seeed reComputer **Classic** J401 刷机](docs/seeed_device/recomputer/recomputer-j401-flash-jetpack.md) - `seeed_device`
 - [Seeed 设备能否刷 NVIDIA 官方镜像？](docs/faq/seeed-device-use-nvidia-official-image.md) - `seeed_device`
 - [淘宝标题「官方核心模组 开发套件」辨析](docs/faq/taobao-title-official-module-vs-nvidia-devkit.md) - `seeed_device`
 - [JetPack 7.2 无 Orin Nano DevKit SD 卡镜像](docs/faq/orin-nano-jetpack-7-2-no-sd-card-image.md) - `official_kit`
+
+### 系统维护 / apt
+
+- [自己装浏览器与 apt upgrade 的区别](docs/faq/seeed-jetson-install-browser-vs-apt-upgrade.md) - `seeed_device`
 
 ### GPIO / 接口 / 外设
 
@@ -66,10 +71,7 @@
 
 ## 收集草稿（`docs/inbox/` — 待晋升）
 
-| 内容 | 来源 |
-| --- | --- |
-| [Super 刷机板级名](docs/inbox/super-j4012-flash-board-name.md) | [Seeed BSP 编译 Wiki](https://wiki.seeedstudio.com/how_to_build_the_source_code_project_for_seeed_jetson_bsp/) |
-| [apt install 浏览器 vs apt upgrade](docs/inbox/seeed-jetson-apt-install-browser.md) | [GitHub issue #41](https://github.com/Seeed-Studio/Linux_for_Tegra/issues/41) |
+当前无条目。见 [inbox/README.md](docs/inbox/README.md)。
 
 ## 社区开放问题（`docs/community_questions/`）
 

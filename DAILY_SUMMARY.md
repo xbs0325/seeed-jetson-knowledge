@@ -1,5 +1,10 @@
 # DAILY_SUMMARY - 2026-06-12
 
+## inbox 晋升 FAQ（active）
+
+- [Super 刷机板级名](docs/faq/recomputer-super-j4012-flash-board-name.md)（`recomputer-orin-super-j401` vs Classic）
+- [装浏览器 vs apt upgrade](docs/faq/seeed-jetson-install-browser-vs-apt-upgrade.md)
+
 ## 知识库清洗（结构重组）
 
 - 新增 [`KNOWLEDGE_AUDIT.md`](KNOWLEDGE_AUDIT.md)：标出 `need_review` 误用、Classic/Super 刷机混用等风险。
