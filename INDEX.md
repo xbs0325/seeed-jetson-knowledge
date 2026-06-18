@@ -47,6 +47,7 @@
 | 条目 | 来源 |
 |------|------|
 | [DepthEye S2 USB 无法识别](docs/staging/deptheye-s2-usb-troubleshooting.md) | [libDepthEye](https://github.com/pointcloudAI/libDepthEye) · [Seeed 商详](https://www.seeedstudio.com/DepthEye-S2-VGA-Resolution-ToF-Camera-p-5095.html) |
+| [Jetson Thor / J601 USB + 1GbE 选型](docs/staging/jetson-thor-j601-usb-1gbe-selection.md) | [Thor Dev Kit](https://www.seeedstudio.com/NVIDIA-Jetson-AGX-Thor-Developer-Kit-p-9965.html) · [J601 Wiki](https://wiki.seeedstudio.com/ai_robotics_recomputer_robotics_j601_carrier_board_getting_started/) |
 | [Seeed J401/J501 是否支持 JP7.2](docs/staging/seeed-j401-jetpack-7-2-support.md) | [Forum](https://forum.seeedstudio.com/t/nvidia-has-officially-announced-jetpack-7-2-june-1-2026-any-plans-for-j401-agx-orin-32gb-support/295471) |
 | [apt upgrade 与 BSP 冲突](docs/staging/seeed-jetpack-6-apt-upgrade-l4t-kernel-conflict.md) | [issue #41](https://github.com/Seeed-Studio/Linux_for_Tegra/issues/41) |
 | [reServer J4012 PoE](docs/staging/reserver-industrial-j4012-poe-jetpack-6.md) | [Forum](https://forum.seeedstudio.com/t/reserver-industrial-j4012-with-jetpack-6-jetson-orin-nx-16gb-missing-gpio/279727) |
