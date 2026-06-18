@@ -20,7 +20,7 @@ confidence: need_review
 |------|-----------|----------|
 | *please directly send me a quote for **that*** | 要 **J601** 的 Bazaar/商详 **链接与价格**，不是走销售 formal quote | 误当成 Thor Dev Kit 正式报价 |
 | *Are you using the SDK manager?* | 问 **NVIDIA 官方 SDK Manager** 是否用于 Thor/J601 刷机/开发 | 过度展开 Seeed BSP vs SDK Manager 对比 |
-| *Do you have then the case there?* | 可能指 **Bazaar 是否已上架**，或工单 **#356347** 是否在案；**不太像**问物理外壳 | 误读为 enclosure/case |
+| *Do you have then the case there?* | 问 **J601 是否有配套外壳/机箱**（载板通常不含 enclosure） | 曾误读为 Bazaar 上架或工单 |
 
 ## 产品对比（待 J601 最终规格确认）
 
@@ -47,8 +47,10 @@ confidence: need_review
 4. **NVIDIA SDK Manager（客户所问）**：
    - **Jetson AGX Thor Developer Kit**：**支持** NVIDIA 官方 SDK Manager 刷 JetPack 7.x（亦可用 ISO / L4T script）。见 [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager)、[Thor BSP Setup](https://docs.nvidia.com/jetson/agx-thor-devkit/user-guide/latest/setup_bsp.html)。
    - **Seeed J601 载板**（未上市）：预计与 J501 一样走 **Seeed BSP + Wiki 刷机**，**不能**用 SDK Manager 选官方 Dev Kit 配置直接刷。
-5. **「case there」**：
-   - 优先理解为 **Bazaar 是否已有 J601 商品页**，或 **工单 #356347** 是否在案；**勿默认**客户在问机箱外壳。
+5. **Case / 外壳（第三句）**：
+   - 客户问 J601 **是否有配套外壳/机箱**。
+   - J601 Wiki：**载板与风扇分开销售**，**无完整 enclosure** 说明（preliminary draft）。
+   - 对比：**Thor Developer Kit** 含 NVIDIA 参考外壳；J601 需客户自研或等 Seeed 配件方案。
 
 ## 置信度
 
