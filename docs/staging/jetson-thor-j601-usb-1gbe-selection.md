@@ -13,7 +13,14 @@ confidence: need_review
 
 - **仅 USB 与 Ethernet 有需求**（GMSL/CAN 等不适用）
 - 夹爪（gripper）需要 **1Gb Ethernet**，10GbE 等可能不被支持
-- 询问报价、SDK Manager、是否有外壳（case）
+
+**邮件语境（Zibo 刚推荐 J601 后，Thomas 回复）：**
+
+| 原句 | 更可能含义 | 此前误判 |
+|------|-----------|----------|
+| *please directly send me a quote for **that*** | 要 **J601** 的 Bazaar/商详 **链接与价格**，不是走销售 formal quote | 误当成 Thor Dev Kit 正式报价 |
+| *Are you using the SDK manager?* | 问 **NVIDIA 官方 SDK Manager** 是否用于 Thor/J601 刷机/开发 | 过度展开 Seeed BSP vs SDK Manager 对比 |
+| *Do you have then the case there?* | 可能指 **Bazaar 是否已上架**，或工单 **#356347** 是否在案；**不太像**问物理外壳 | 误读为 enclosure/case |
 
 ## 产品对比（待 J601 最终规格确认）
 
@@ -27,18 +34,21 @@ confidence: need_review
 
 ## 内部建议摘要
 
-1. **报价**：技术支持不出报价 → 转 **order@seeed.io / 销售**，注明德国高校、数量、SKU、是否需要形式发票。
+1. **报价 / Bazaar 链接**：
+   - 客户要的是 **J601 购买链接**（Bazaar/商详），不是 formal proforma。
+   - **J601 目前未上架 Bazaar**（Wiki 标注 coming soon / preliminary）；**无法提供 J601 链接或确切价格**。
+   - 若客户接受现货替代：**Thor Dev Kit** 有 Bazaar 页 https://www.seeedstudio.com/NVIDIA-Jetson-AGX-Thor-Developer-Kit-p-9965.html（SKU 100060965，$3,499）。
+   - 高校批量/形式发票仍转 **order@seeed.io**。
 2. **Thor Dev Kit 官网限购**：商详标注 **Maximum purchase per account: 1pcs**；批量/高校采购需销售通道。
 3. **1GbE 夹爪**：若夹爪**仅支持标准 1GbE**：
    - **J501 / J501 Mini** 有专用 1GbE 口，但为 **AGX Orin** 非 Thor。
    - **Thor Dev Kit** 的 5GbE 口通常可协商至 1G，**需客户与夹爪厂商确认**。
    - **J601** 目前 Wiki 仅提高速以太网，**不能承诺**有 1GbE 口；且 Zibo 邮件中的「4× 10GbE」与 Thomas 需求可能不匹配。
-4. **SDK Manager**：
-   - **官方 Thor Dev Kit**：NVIDIA 文档以 **Jetson ISO** 自助安装为主；SDK Manager 为需 Ubuntu Host 的替代方案。
-   - **Seeed J501/J601 等**：使用 **Seeed 镜像 + BSP**，非 SDK Manager 刷官方 Dev Kit 镜像。
-5. **Case/外壳**：
-   - Thor Dev Kit：**含** NVIDIA 参考外壳。
-   - J601：**仅载板**，无完整 case 说明。
+4. **NVIDIA SDK Manager（客户所问）**：
+   - **Jetson AGX Thor Developer Kit**：**支持** NVIDIA 官方 SDK Manager 刷 JetPack 7.x（亦可用 ISO / L4T script）。见 [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager)、[Thor BSP Setup](https://docs.nvidia.com/jetson/agx-thor-devkit/user-guide/latest/setup_bsp.html)。
+   - **Seeed J601 载板**（未上市）：预计与 J501 一样走 **Seeed BSP + Wiki 刷机**，**不能**用 SDK Manager 选官方 Dev Kit 配置直接刷。
+5. **「case there」**：
+   - 优先理解为 **Bazaar 是否已有 J601 商品页**，或 **工单 #356347** 是否在案；**勿默认**客户在问机箱外壳。
 
 ## 置信度
 
