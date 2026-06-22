@@ -40,3 +40,16 @@
 - reComputer Classic J401 刷机：https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack/
 - reComputer Super：https://wiki.seeedstudio.com/recomputer_jetson_super_getting_started/
 - 按产品选镜像：https://wiki.seeedstudio.com/flash/jetpack_to_selected_product/
+
+## 英文外发邮件语气
+
+以 **Seeed Studio 技术支持**身份回复，用第一人称，少用第三人称指公司：
+
+| 避免 | 改用 |
+| --- | --- |
+| Seeed does not publish… | We do not publish… |
+| Seeed documentation… | Our documentation / the Wiki… |
+| Seeed carrier boards… | Our carrier boards… |
+
+- 篇幅宜短；技术结论 + 必要链接即可，避免冗长铺垫。
+- 内部知识库、case 记录仍可用第三人称「Seeed」描述事实。
