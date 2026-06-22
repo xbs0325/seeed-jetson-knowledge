@@ -18,6 +18,7 @@
 | [GPIO sysfs 缺失](docs/faq/jetpack-6-gpio-sysfs-missing.md) | [GitHub](https://github.com/NVIDIA/jetson-gpio/issues/114) |
 | [AGX Orin 64GB 规格书](docs/faq/agx-orin-64gb-developer-kit-datasheet.md) | NVIDIA |
 | [Orin Nano 无 SD 镜像 (JP7.2)](docs/faq/orin-nano-jetpack-7-2-no-sd-card-image.md) | NVIDIA |
+| [J4012 PREEMPT_RT 内核 (R36.4.3)](docs/faq/j4012-preempt-rt-kernel-seeed-bsp-r3643.md) | Wiki + NVIDIA + GitHub |
 
 ### Seeed 设备
 
