@@ -1,8 +1,8 @@
 ---
 date: 2026-06-22
 channel: other
-product: Seeed Jetson carrier board (model not specified)
-resolved: partial
+product: reComputer Industrial J4012 (Jetson Orin NX 16GB)
+resolved: yes
 confidence: need_review
 ---
 
@@ -12,13 +12,15 @@ confidence: need_review
 1. 正常使用条件下 RTC 电池预期寿命；
 2. 是否有建议更换周期。
 
+**产品型号（已确认）**：reComputer Industrial J4012，Jetson Orin NX 16GB。
+
 ## 答复要点
 
-- **已确认**：Seeed Jetson 载板 Wiki 仅说明电池型号与安装/验证步骤，**未发布固定更换周期**。
-- **已确认（型号）**：多数载板 CR1220；Super 为 CR1225；R1000 为 CR2032。
-- **更正（2026-06-22）**：初版误将 reTerminal PCF8563（~0.25 µA）寿命外推到 Jetson Orin 载板。**Jetson Orin 模组 PMIC_BBAT 备份电流为 12–50 µA**（NVIDIA Data Sheet），CR1220/CR1225 在持续断电备份下约 **1–5 个月**，**不能承诺 3 年**。
-- **维护建议**：以断电后 `hwclock` 是否保持为准；设备长期上电时日历寿命会更长。
-- 客户未提供具体产品型号，外发邮件需按 Jetson Orin 载板更正说明。
+- **已确认（产品）**：J4012 属 reComputer Industrial J40/J30 系列；RTC 板载座为 **3V CR1220**（正极朝上），可选 2-pin JST 外接 CR2032（二选一，见 Wiki）。
+- **已确认**：Wiki 未发布固定更换周期；JetPack 6 及以上 RTC 无需额外配置即可工作。
+- **已确认（耗电）**：Orin NX 模组 PMIC_BBAT 备份电流与 Orin 系列一致，NVIDIA 规格 **12–50 µA**。
+- **估算**：CR1220 持续断电备份约 **1–5 个月**；设备长期上电、仅偶尔断电时日历寿命更长。**不宜承诺 3 年**。
+- **维护建议**：断电后 `sudo hwclock` 验证；时间丢失即更换同规格非充电 CR1220。
 
 ## 知识库更新
 

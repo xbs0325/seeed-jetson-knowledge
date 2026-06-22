@@ -27,7 +27,7 @@ status: need_review
 * 适用平台类型：seeed_device
 * 简洁答案
   * **已确认**：Seeed Jetson 载板 Wiki 说明了 RTC 电池型号与安装方式，但**未给出固定更换周期或官方预期寿命数值**。
-  * **已确认（按型号）**：多数载板使用 **3V CR1220**；reComputer Super 使用 **3V CR1225**；reComputer R1000 预装 **CR2032**。
+  * **已确认（按型号）**：reComputer Industrial J4012 等多数载板使用 **3V CR1220**（板载座）；reComputer Super 使用 **3V CR1225**；reComputer R1000 预装 **CR2032**。Industrial 亦可选 2-pin JST 外接 CR2032（与板载座二选一）。
   * **已确认（Jetson Orin 模组 RTC 耗电）**：载板 RTC 电池为 Jetson 模组 **PMIC_BBAT** 供电；NVIDIA Orin Nano 系列 Data Sheet 写明电池备份工作电流为 **12–50 µA**（不可调）。这与 reTerminal 等独立 PCF8563 RTC（约 0.25 µA）**不是同一量级**。
   * **估算（按 NVIDIA 电流 + 电池容量，非 Seeed 官方承诺）**：
     * CR1220（约 40 mAh）：断电且 RTC 已启用时，约 **1–5 个月**（12 µA 理论上限约 4.6 个月；50 µA 约 1 个月；社区实测约 16 µA 时约 3–4 个月）。
