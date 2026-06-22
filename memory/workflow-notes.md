@@ -43,13 +43,29 @@
 
 ## 英文外发邮件语气
 
-以 **Seeed Studio 技术支持**身份回复，用第一人称，少用第三人称指公司：
+以 **Seeed Studio 技术支持**身份回复：第一人称 **we / our**，少用第三人称「Seeed」；语气专业、委婉，避免堆叠否定句。
+
+### 人称
 
 | 避免 | 改用 |
 | --- | --- |
-| Seeed does not publish… | We do not publish… |
+| Seeed does not publish… | Our documentation does not list… / A fixed interval is not specified… |
 | Seeed documentation… | Our documentation / the Wiki… |
 | Seeed carrier boards… | Our carrier boards… |
 
-- 篇幅宜短；技术结论 + 必要链接即可，避免冗长铺垫。
+### 委婉表达（少写 We don't / We do not）
+
+连续多句以「We do not…」开头会显得生硬。可改为陈述事实、给建议，而非一再强调「没有」：
+
+| 生硬 | 委婉 |
+| --- | --- |
+| We do not publish a fixed lifespan. | Our documentation does not list a specific number of years; in typical use, … |
+| We do not specify a mandatory replacement schedule. | Rather than a fixed calendar interval, the most reliable approach is to replace the battery when… |
+| We do not support X. | X is not supported on this product; you may consider… |
+
+原则：**先给有用信息或建议，必要时再说明限制**；同一封邮件里「do not / don't」不宜重复出现。
+
+### 其他
+
+- 篇幅宜短；技术结论 + 必要链接即可。
 - 内部知识库、case 记录仍可用第三人称「Seeed」描述事实。
