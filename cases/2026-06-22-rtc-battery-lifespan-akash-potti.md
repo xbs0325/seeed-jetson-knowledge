@@ -16,8 +16,9 @@ confidence: need_review
 
 - **已确认**：Seeed Jetson 载板 Wiki 仅说明电池型号与安装/验证步骤，**未发布固定更换周期**。
 - **已确认（型号）**：多数载板 CR1220；Super 为 CR1225；R1000 为 CR2032。
-- **参考答复**：行业资料下 RTC 备份场景常见可用期约 3–5 年；以断电后时间是否保持为准决定是否更换。
-- 客户未提供具体产品型号，外发邮件中已按常见 Seeed Jetson 载板说明，并建议其告知型号以便精确确认电池规格。
+- **更正（2026-06-22）**：初版误将 reTerminal PCF8563（~0.25 µA）寿命外推到 Jetson Orin 载板。**Jetson Orin 模组 PMIC_BBAT 备份电流为 12–50 µA**（NVIDIA Data Sheet），CR1220/CR1225 在持续断电备份下约 **1–5 个月**，**不能承诺 3 年**。
+- **维护建议**：以断电后 `hwclock` 是否保持为准；设备长期上电时日历寿命会更长。
+- 客户未提供具体产品型号，外发邮件需按 Jetson Orin 载板更正说明。
 
 ## 知识库更新
 
@@ -32,9 +33,9 @@ confidence: need_review
 - https://wiki.seeedstudio.com/recomputer_jetson_super_hardware_interfaces_usage/
 - https://wiki.seeedstudio.com/reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage/
 - https://wiki.seeedstudio.com/ai_robotics_recomputer_j501_robotics_getting_started/
-- https://wiki.seeedstudio.com/reTerminal-hardware-interfaces-usage/
 - https://wiki.seeedstudio.com/recomputer_r/
-- https://www.murata.com/-/media/webrenewal/products/batteries/micro/cr/tcn-cr-001-200722.ashx
+- https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.0/release/jetson_orin_nano_series_modules_data_sheet_ds-11105-001_v1.5.pdf
+- https://forums.developer.nvidia.com/t/jetson-orin-nano-rtc-power-consumption/307386/3
 
 ## PR
 
