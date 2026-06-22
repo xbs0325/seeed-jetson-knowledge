@@ -171,8 +171,14 @@ cat /sys/kernel/debug/preempt_rt/ 2>/dev/null || zgrep CONFIG_PREEMPT_RT /proc/c
 3. 刷机/升级后 **避免无保护地 `sudo apt upgrade`**，以免 NVIDIA 官方内核包覆盖 Seeed 定制内核（参见 issue #41）。
 4. 社区参考：[Seeed Forum — A603 RT kernel（JP 6.2 / R36.4.3）](https://forum.seeedstudio.com/t/how-to-install-a-real-time-kernel-for-the-a603-board/293292)（流程类似，device name 与 DTB 不同）。
 
+## reComputer Industrial J4012 补充说明
+
+- 典型运行环境：Ubuntu 22.04，内核 `5.15.148-tegra`（L4T R36.4.3 / JetPack 6.2）与本文档版本一致。
+- Industrial J4012 刷机 device name：**`recomputer-industrial-orin-j201`**（与 J4011 等同配置文件前缀）。
+- Industrial 刷机入口 Wiki：https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/
+- PoE、DI/DO、RS485、CAN 等工业接口依赖 Seeed DTB；必须使用 Seeed BSP 构建的 RT 内核，不可改用 NVIDIA DevKit RT APT 包。
+
 ## 售后需向客户确认
 
-- J4012 具体产品形态（Classic / Industrial / reServer / Super），以选择正确 flash device name。
 - 存储介质（eMMC / NVMe / SD）以调整刷机参数。
 - 是否必须保留当前系统内用户数据（决定刷机 vs 备份策略）。
