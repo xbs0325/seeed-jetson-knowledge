@@ -28,7 +28,8 @@
 | [Classic J401 刷机](docs/seeed_device/recomputer/recomputer-j401-flash-jetpack.md) | 不含 Super |
 | [Super 刷机要点](docs/seeed_device/recomputer/recomputer-super-jetpack-6-2.md) | mfi `--flash-only` |
 | [Linux_for_Tegra BSP](docs/seeed_device/recomputer/seeed-linux-for-tegra-jetpack-6-2-bsp.md) | |
-| [Industrial](docs/seeed_device/recomputer-industrial/recomputer-industrial-getting-started.md) | |
+| [Industrial](docs/seeed_device/recomputer-industrial/recomputer-industrial-getting-started.md) | Jetson J201/J301/J401 |
+| [Industrial R20xx TPM 选配](docs/seeed_device/recomputer-industrial-r20xx/recomputer-industrial-r20xx-tpm-option.md) | R2045-12 等 CM5 系列 |
 | [reServer Industrial](docs/seeed_device/reserver/reserver-industrial-getting-started.md) | |
 | [Robotics J401](docs/seeed_device/recomputer-robotics/robotics-j401-interfaces.md) | |
 | [Robotics J501](docs/seeed_device/recomputer-robotics/robotics-j501-jetpack-6-2-1.md) | |
