@@ -178,7 +178,64 @@ cat /sys/kernel/debug/preempt_rt/ 2>/dev/null || zgrep CONFIG_PREEMPT_RT /proc/c
 - Industrial 刷机入口 Wiki：https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/
 - PoE、DI/DO、RS485、CAN 等工业接口依赖 Seeed DTB；必须使用 Seeed BSP 构建的 RT 内核，不可改用 NVIDIA DevKit RT APT 包。
 
+## 刷机后 PARTUUID 挂载失败（`can't find PARTUUID=...`）
+
+### 典型现象
+
+刷入自定义 RT 内核后，串口在 initrd 阶段反复出现：
+
+```text
+mount: /mnt: can't find PARTUUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+ERROR: mounting PARTUUID=... as /mnt failed
+ttyTCU0: Press [ENTER] to start bash in XX seconds...
+```
+
+Industrial J4012 无板载 eMMC，系统根分区在 **M.2 NVMe**；该错误**多数情况下表示 initrd 阶段未识别到 NVMe**，而非单纯「PARTUUID 写错」。
+
+### 常见原因（按概率）
+
+| 原因 | 说明 |
+|------|------|
+| **initrd 未与 RT 内核同步** | 编译并 `nvbuild.sh -r -i` 后**必须**在 `Linux_for_Tegra/` 根目录执行 `sudo ./tools/l4t_update_initrd.sh`。未更新时，initrd 内仍为旧版 `lib/modules`，PCIe/NVMe 驱动无法加载，分区不可见即报 PARTUUID 找不到。参见 [NVIDIA Kernel Customization](https://docs.nvidia.com/jetson/archives/r36.4.4/DeveloperGuide/SD/Kernel/KernelCustomization.html) 与 [Forum 讨论](https://forums.developer.nvidia.com/t/cant-find-partuuid-when-replacing-kernel-on-a-custom-board/288839)。 |
+| **`l4t_update_initrd.sh` 失败** | host 需安装 `cpio`（`sudo apt install cpio`）。脚本报错时 initrd 可能未真正更新。 |
+| **UEFI 启动项** | NVMe 完整刷机后，需在 UEFI 菜单选择对应 NVMe 启动项。 |
+| **刷机参数** | Industrial J4012 使用 `recomputer-industrial-orin-j201`；NVMe 根分区示例 `--external-device nvme0n1p1`。 |
+
+### 紧急 shell 诊断（出现 `Press [ENTER]` 时）
+
+```bash
+lsblk
+blkid
+cat /proc/cmdline
+dmesg | grep -iE 'nvme|pcie'
+```
+
+- **无 `nvme0n1`**：优先怀疑 initrd/模块不匹配 → 在 host 重做 `l4t_update_initrd.sh` 并完整重刷。
+- **有 `nvme0n1p1` 但 PARTUUID 与 cmdline 不一致**：多为启动配置陈旧 → 完整重刷；或 host 挂载 NVMe 检查 `/boot/extlinux/extlinux.conf` 中 `root=` 参数。
+
+### 推荐修复流程（host）
+
+```bash
+cd Linux_for_Tegra/source
+./nvbuild.sh -r
+./do_copy.sh
+export INSTALL_MOD_PATH=$(realpath ../rootfs/)
+./nvbuild.sh -r -i
+cd ..
+sudo apt install -y cpio    # 若尚未安装
+sudo ./tools/l4t_update_initrd.sh
+# 确认无报错后再刷机（完整 flash，非仅 --flash-only）
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh \
+  --external-device nvme0n1p1 \
+  -c tools/kernel_flash/flash_l4t_t234_nvme.xml \
+  -p "-c bootloader/generic/cfg/flash_t234_qspi.xml" \
+  --showlogs --network usb0 recomputer-industrial-orin-j201 internal
+```
+
+若需先恢复可启动系统：使用 [Industrial Getting Started](https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/) 中 JP 6.2 **mfi** 镜像 `sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --network usb0 --showlogs` 验证硬件，再按上文重做 RT 构建与刷机。
+
 ## 售后需向客户确认
 
 - 存储介质（eMMC / NVMe / SD）以调整刷机参数。
 - 是否必须保留当前系统内用户数据（决定刷机 vs 备份策略）。
+- `l4t_update_initrd.sh` 是否已执行且无报错；host 刷机日志末尾；紧急 shell 下 `lsblk` / `blkid` / `dmesg` 输出。
