@@ -13,6 +13,9 @@ tags:
 date: 2026-06-12
 source_url: https://github.com/Seeed-Studio/Linux_for_Tegra/issues/41
 status: need_review
+review_target: docs/faq
+review_reason: "Seeed issue is closed and the conclusion is reusable, but latest per-product Wiki should be checked before promotion."
+next_action: "If still consistent with current Wiki/BSP guidance, promote to active FAQ and update INDEX.md."
 ---
 
 * 问题
