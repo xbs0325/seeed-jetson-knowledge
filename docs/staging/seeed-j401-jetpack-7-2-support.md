@@ -13,6 +13,9 @@ tags:
 date: 2026-06-10
 source_url: https://forum.seeedstudio.com/t/nvidia-has-officially-announced-jetpack-7-2-june-1-2026-any-plans-for-j401-agx-orin-32gb-support/295471
 status: need_review
+review_target: docs/faq
+review_reason: "JetPack 7.2 support for Seeed J401/J501 requires official Seeed image/BSP confirmation."
+next_action: "Check current Seeed Wiki/product pages and internal release status; promote only after Seeed JP7.2 BSP/image is confirmed."
 ---
 
 # 待复核：Seeed J401/J501 是否支持 JetPack 7.2
