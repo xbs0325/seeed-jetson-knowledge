@@ -1,12 +1,11 @@
 # 技术支持知识库索引
 
-客服与 Agent 优先引用 **`status: active`** 条目。`docs/staging/` 为待确认草稿，勿作最终答案。
-
-各子目录含义见 [`docs/README.md`](docs/README.md)。
+> 客服优先引用 **`status: active`**。`docs/staging/` 为待确认，勿当最终答案。  
+> 结构说明：[`README.md`](README.md)
 
 ## 已确认（active）
 
-### 常见问题（faq）
+### FAQ
 
 | 条目 | 来源 |
 |------|------|
@@ -22,7 +21,7 @@
 | [Orin Nano 无 SD 镜像 (JP7.2)](docs/faq/orin-nano-jetpack-7-2-no-sd-card-image.md) | NVIDIA |
 | [J4012 PREEMPT_RT 内核 (R36.4.3)](docs/faq/j4012-preempt-rt-kernel-seeed-bsp-r3643.md) | Wiki + NVIDIA + GitHub |
 
-### Seeed 设备（seeed_device）
+### Seeed 设备
 
 | 条目 | 备注 |
 |------|------|
@@ -35,7 +34,7 @@
 | [Robotics J401](docs/seeed_device/recomputer-robotics/robotics-j401-interfaces.md) | |
 | [Robotics J501](docs/seeed_device/recomputer-robotics/robotics-j501-jetpack-6-2-1.md) | |
 
-### NVIDIA 官方套件（official_kit）
+### 官方套件 / 通用
 
 | 条目 |
 |------|
@@ -44,11 +43,6 @@
 | [Orin Nano JP7.2 ISO](docs/official_kit/jetson-orin-nano-devkit/jetpack-7-2-iso-install.md) |
 | [AGX Orin JP7.2 更新](docs/official_kit/jetson-agx-orin-devkit/jetpack-7-2-iso-update.md) |
 | [GPIO pinmux](docs/official_kit/common/jetpack-6-gpio-pinmux.md) |
-
-### 跨平台通用（common）
-
-| 条目 |
-|------|
 | [BSP 后装 SDK](docs/common/install-jetpack-components-after-bsp.md) |
 
 ## 待确认（staging）
