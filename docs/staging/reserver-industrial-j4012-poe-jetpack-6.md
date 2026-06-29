@@ -13,6 +13,9 @@ tags:
 date: 2026-06-10
 source_url: https://forum.seeedstudio.com/t/reserver-industrial-j4012-with-jetpack-6-jetson-orin-nx-16gb-missing-gpio/279727
 status: need_review
+review_target: docs/faq
+review_reason: "Forum workaround is product-specific and should be checked against latest reServer Industrial Wiki/BSP before becoming active."
+next_action: "Confirm current PoE enable method for JP6.x reServer Industrial J4012; promote to FAQ if still valid."
 ---
 
 * 问题
