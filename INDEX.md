@@ -44,6 +44,7 @@
 | [AGX Orin JP7.2 更新](docs/official_kit/jetson-agx-orin-devkit/jetpack-7-2-iso-update.md) |
 | [GPIO pinmux](docs/official_kit/common/jetpack-6-gpio-pinmux.md) |
 | [BSP 后装 SDK](docs/common/install-jetpack-components-after-bsp.md) |
+| [Seeed Jetson 产品线辨析](docs/common/seeed-jetson-product-line-disambiguation.md) |
 
 ## 待确认（staging）
 
