@@ -12,7 +12,7 @@ tags:
   - h01
   - a603
   - support-routing
-date: 2026-06-29
+date: 2026-07-03
 source_links:
   - https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack/
   - https://wiki.seeedstudio.com/recomputer_jetson_super_getting_started/
@@ -34,7 +34,7 @@ Seeed Jetson 产品线命名相近，客服和 Agent 容易把刷机包、BSP、
 | 名称 | 常见模组 | 典型定位 | 关键注意 |
 | --- | --- | --- | --- |
 | reComputer J401/J301 Classic | Orin NX / Orin Nano | 标准 reComputer 载板/整机 | Classic J401 Wiki 不等于 Super 或 Robotics |
-| reComputer Super J401 | Orin NX / Orin Nano | Super/MAXN 模式载板 | 使用 Super 对应 mfi/board name，不混用 Classic J401 |
+| reComputer Super J3010/J3011/J4011/J4012 | Orin Nano 4GB/8GB / Orin NX 8GB/16GB | Super/MAXN 模式整机 | 载板均为 **Super J401**；型号中的 J301x/J401x 指**模组型号**，不是载板型号 |
 | reComputer Robotics J401 | Orin NX / Orin Nano | 机器人载板，CAN/GMSL/多 USB | GMSL 路径与 Super J401 不同，需对应 BSP/overlay |
 | reComputer Robotics J501 / J501 Mini | AGX Orin 32GB/64GB | AGX Orin 机器人/工业边缘 AI | 面向 AGX Orin，GMSL、CAN、DI/DO 依赖 J501 BSP |
 | reComputer Industrial J4012 | Orin NX 16GB | 工业无风扇边缘 AI 盒子 | 2x RJ45，工业接口，使用 Industrial Wiki/BSP |
@@ -42,6 +42,12 @@ Seeed Jetson 产品线命名相近，客服和 Agent 容易把刷机包、BSP、
 | AGX Orin H01 Kit | AGX Orin 32GB 等 | 套件/载板方案 | 不应默认当 reComputer/reServer；硬件细节可能需合作伙伴确认 |
 | A603 / A601 等载板 | Orin NX/Nano 或 AGX 系列视型号而定 | 合作伙伴/代理/非标准 reComputer 形态可能存在 | Bazaar 或 Wiki 不一定完整；需确认来源、载板版本、公开资料 |
 | NVIDIA 官方 Developer Kit | NVIDIA 官方套件 | NVIDIA 参考开发套件 | SDK Manager/官方镜像流程只默认适用于 NVIDIA 官方套件 |
+
+## 命名注意
+
+- **J301x / J401x 指模组型号**：在 reComputer Super 系列中，J3010/J3011 表示搭载 Jetson Orin Nano 4GB/8GB 模组，J4011/J4012 表示搭载 Jetson Orin NX 8GB/16GB 模组。
+- **载板型号是 J401**：上述四款 Super 整机（J3010/J3011/J4011/J4012）使用的是同一块 **reComputer Super J401** 载板。客户看到设备信息里的 “J401 V1.0” 并不代表型号是 J4011/J4012，而是指载板版本。
+- 因此刷机时应按**模组型号**选择 mfi 包（如 J3011 选 Orin Nano 8GB），而不是按载板型号选择。
 
 ## 推断
 
