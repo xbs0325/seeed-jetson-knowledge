@@ -2,8 +2,8 @@
 product: Mini AI Computer T506S
 vendor: seeed
 platform: seeed_device
-jetpack: "4.6 (shipped) / 5.1.x (NVIDIA Xavier ceiling; T506S BSP TBD)"
-l4t: "32.6.x shipped; 35.6.x NVIDIA Xavier latest"
+jetpack: "4.6 / 4.6.1 (T506S BSP available); no JP5 BSP"
+l4t: "32.6.x / 32.7.x class for JP4.6.1"
 tags:
   - t506s
   - xavier-nx
