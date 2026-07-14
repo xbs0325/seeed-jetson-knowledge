@@ -56,7 +56,7 @@
 | [reServer J4012 PoE](docs/staging/reserver-industrial-j4012-poe-jetpack-6.md) | [Forum](https://forum.seeedstudio.com/t/reserver-industrial-j4012-with-jetpack-6-jetson-orin-nx-16gb-missing-gpio/279727) |
 | [reServer J4012 PoE/GPIO 记录](docs/staging/reserver-industrial-j4012-jetpack-6-gpio-poe.md) | 同上 |
 | [Jetson RTC 电池寿命与更换](docs/staging/jetson-rtc-battery-lifespan-replacement.md) | NVIDIA PMIC_BBAT 12–50 µA；CR1220 约 1–5 月 |
-| [T506S 载板升级选项 / BSP / Wi-Fi](docs/staging/mini-ai-computer-t506s-orin-upgrade-bsp-wifi.md) | 主答换载板；附带本机不可插 Orin；BSP/Wi-Fi SKU 待确认 |
+| [T506S 本机升模组 / BSP / Wi-Fi](docs/staging/mini-ai-computer-t506s-orin-upgrade-bsp-wifi.md) | 主答本机不可插 Orin；JP4.6 出厂；BSP/Wi-Fi SKU 待确认 |
 
 ## 结案日志
 
