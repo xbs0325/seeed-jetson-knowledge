@@ -2,99 +2,108 @@
 product: Mini AI Computer T506S
 vendor: seeed
 platform: seeed_device
-jetpack: "4.6 (shipped) / 5.1.x (NVIDIA Xavier ceiling, T506S BSP TBD)"
-l4t: "32.6.x shipped; 35.6.x NVIDIA Xavier latest"
+jetpack: "4.6 (shipped) / 5.1.x Xavier ceiling; Orin path uses JP5–JP7 per target product"
+l4t: "32.6.x shipped on T506S; target board depends"
 tags:
   - t506s
   - xavier-nx
+  - carrier-upgrade
   - orin-upgrade
   - bsp
   - wifi
-  - carrier-board
+  - reserver-industrial
 date: 2026-07-14
 source_links:
   - https://www.seeedstudio.com/Mini-AI-Computer-T506S-with-Jetson-Xavier-NX-8GB-p-5507.html
   - https://www.pi-shop.ch/mini-ai-computer-t506s
   - https://twowintech.com/wp-content/uploads/2025/07/TW-T506S-User-Guide.pdf
-  - https://wiki.seeedstudio.com/Mini_AI_Computer_T906/
+  - https://wiki.seeedstudio.com/reServer_Industrial_Getting_Started/
+  - https://wiki.seeedstudio.com/reComputer_J2021_J202_Flash_Jetpack/
+  - https://www.seeedstudio.com/reComputer-J202-Carrier-Board-for-Jetson-Xavier-NX-p-5397.html
   - https://developer.nvidia.com/embedded/jetpack-archive
   - https://forums.developer.nvidia.com/t/can-i-connect-jetson-orin-nx-16-board-to-xavier-nx-carrier-board/241776/4
 status: need_review
 review_target: docs/seeed_device/mini-ai-computer
-review_reason: "T506S 缺少 Seeed 官方 Wiki/BSP 页面；Wi-Fi 具体可采购 SKU、是否可升级到 JP5.1.x 且保留全接口，需产品线或 OEM 确认"
-next_action: "确认后迁入 seeed_device 或 faq，并补充 BSP 下载链接与 Wi-Fi SKU"
+review_reason: "T506S 公开 BSP/Wi-Fi SKU 不足；客户英文同时覆盖换载板与本机换模组，外发前需确认客户真正要 Xavier 保留还是 Orin 升级"
+next_action: "向客户确认目标是保留 Xavier 换载板，还是整机升级到 Orin；向销售确认 J202/reServer 库存与 Wi-Fi 配件 SKU"
 ---
 
-# Mini AI Computer T506S：模组升级、JetPack/BSP、接口与 Wi-Fi（待确认）
+# Mini AI Computer T506S：载板升级选项、接口匹配、JetPack/BSP（待确认）
 
 ## 适用范围
 
-- Seeed Mini AI Computer **T506S**，SKU **114110167**，搭载 Jetson Xavier NX 8GB。
-- 相关 OEM 文档常写作 TWOWIN **TW-T506S**（硬件描述与 Seeed 商详高度一致，作参考）。
-- **不适用**：reComputer Classic/Super/Industrial J401、reServer、T906（AGX Orin）及其他 Orin 载板的直接结论套用。
+- Seeed **Mini AI Computer T506S**（SKU 114110167，Xavier NX 8GB）客户询问升级方案。
+- 英文原文同时出现「upgrade options for its carrier board」与「Does this carrier board support Orin…」。
+- **主答口径**：载板/整机升级或更换；附带澄清本机是否可插 Orin。
+- **不适用**：把 T506S 当成第三方盒子；把 J202 或 reServer 资料当成 T506S 本机刷机包。
 
 ## 事实
 
-### 产品与接口（公开商详 / 分销页）
+### 原文歧义（给客服）
 
-- 边缘 AI 整机，Jetson Xavier NX 8GB，商详标注预装 **JetPack 4.6**。
-- 接口摘要：5x PoE GbE（4x PSE + 1x PD）、4x USB 3.0、Micro-USB device、HDMI、RS-232、RS-485、CAN、4x GPIO、I2C、M.2 Key M（预装 128GB SSD）、TF、mini PCIe（4G）、M.2 E（商详写 5G）、Wi-Fi/蓝牙为可选（modules not included）。
-- Wi-Fi 描述为 **surface mounted**（表面贴装位）+ 天线口，与 DevKit 常见「客户自插 M.2 Key E Wi-Fi 卡」形态不同；M.2 E 在商详语境下更偏 5G。
+| 句子 | 可理解成 |
+| --- | --- |
+| upgrade options for its carrier board | 有哪些方案升级/更换这块载板（或载板方案） |
+| Does this carrier board support Orin NX/Nano | 现有 T506S 载板能不能直接插 Orin |
 
-### Orin 模组兼容性（NVIDIA）
+两句都在信里；内部关注点「Xavier 载板是否还在售」支持优先按 **换载板** 处理。
 
-- NVIDIA 官方说明：Orin NX / Orin Nano 与 Xavier NX **form-factor compatible（同 260-pin SODIMM）**，但 **not pin-compatible**。
-- 可为「公共 I/O」专门设计双模组载板；**不能**据此认定任意 Xavier 载板可安全直接换装 Orin。
-- Seeed T506S / TWOWIN TW-T506S 公开规格**仅写 Xavier NX**，**未**声明支持 Orin NX / Orin Nano。
+### 本机 T506S 载板 ↔ Orin 模组
 
-### JetPack 版本边界（NVIDIA）
+- NVIDIA：Orin NX/Nano 与 Xavier NX **外形兼容、非 pin 兼容**。
+- Seeed/OEM 公开规格仅写 Xavier NX，**无** Orin 直插认证。
+- 结论对外：**不建议、不承诺** 在 T506S 上更换 Orin NX/Orin Nano。
 
-- Xavier 系列仍包含在 **JetPack 5.1.6 / L4T 35.6.4** 支持列表。
-- **JetPack 6.x / 7.x 不支持** Jetson Xavier NX（仅 Orin / Thor 等）。
-- T506S 出厂宣传为 JP4.6；从 JP4.6 升到 JP5.1.x **依赖定制载板 BSP**，不能默认等于 NVIDIA Xavier NX DevKit 流程。
+### 仍可见的 Xavier 载板 / 整机（库存须销售确认）
 
-### BSP / 刷机资料公开情况
+| 产品 | 说明 | 与客户接口清单的匹配 |
+| --- | --- | --- |
+| **J202 载板** | Xavier NX / Nano / TX2 NX | 开发向接口（1×GbE、USB、HDMI/DP、M.2 M/E、CAN、40-pin）。**无** T506S 级 5×PoE、工业 RS-485 整机形态 |
+| J2021 / Industrial J2012 / T506S | Xavier 整机 | Industrial J2012：2×GbE（1 PoE）、COM、CAN、DI/DO；**仍不如** T506S 的 5×PoE |
 
-- Seeed Wiki 有 **T906** 独立页面与刷机说明；检索时**未找到** T506S 对等 Wiki / SourceForge BSP 入口。
-- Seeed Jetson DevelopTool / Linux_for_Tegra 公开支持列表以 reComputer / reServer Orin 系列为主，**未列出 T506S**。
-- TWOWIN TW-T506S User Guide 写明：接口驱动为厂商定制，与 NVIDIA 开发板不同；**直接 `apt upgrade` 会升级内核并覆盖设备树**。手册给出先备份 `nvidia-l4t-apt-source.list` 再升级的警告流程。
-- 恢复模式：按住 REC，再按住 RST，约 2 秒后先松 RST 再松 REC；主机 `lsusb` 应看到 NVIDIA Corp。
+### 若目标是 Orin + 尽量贴近 T506S 接口
+
+- **reServer Industrial**（Orin NX/Nano）公开接口更接近：5×GbE（4×PoE PSE）、COM RS232/422/485、CAN、HDMI、USB3.1、NVMe、可选蜂窝/无线扩展。
+- 这是 **换整机/产品线**，不是把 Orin 模组塞进 T506S 外壳。
+- Wiki 有刷机与镜像入口（含较新 JetPack 镜像表）；接口依赖 Seeed BSP，不是 NVIDIA DevKit 默认保证。
+
+### T506S 本机软件
+
+- 商详预装 **JetPack 4.6**。
+- NVIDIA Xavier 最新支持到 **JetPack 5.1.6**；**JP6/7 不含 Xavier**。
+- Seeed Wiki **未见** T506S 对等刷机页；公开 Linux_for_Tegra 列表亦不含 T506S。
+- OEM 手册警告：定制驱动，随意 `apt upgrade` 可能覆盖设备树/内核。
 
 ### Wi-Fi / Bluetooth
 
-- 标准件不含 Wi-Fi 模组；可选安装后可用图形界面或 `nmcli` 连接。
-- 公开商详 / 用户手册**未列出**具体兼容芯片 SKU（如 Intel 8265 等）或 Seeed 可售配件编号。
-- 在未获产品线确认前，**不能**把通用 Jetson M.2 Key E Wi-Fi 攻略当作 T506S 售后加装方案。
+- T506S：可选表面贴装，标准件不含；公开页 **无** 售后自装精确 SKU。
+- 若换到 **J202**：M.2 Key E 可装常见 Wi-Fi/BT；具体推荐 SKU 问销售。
+- 若换到 **reServer Industrial**：走 Mini PCIe / M.2 Key B 等无线扩展（商详多为 4G/5G/LoRa 可选），Wi-Fi/BT 具体配件需销售确认。
 
 ## 推断
 
-- T506S 载板大概率**不能**作为 Orin NX/Nano 的即插即用升级底座；换模组存在电气 / pinmux / 供电风险。
-- 即便 NVIDIA 侧 Xavier 可到 JP5.1.6，T506S 若要用新版软件，仍需 OEM/Seeed 提供对应镜像与设备树；否则 Ethernet 交换芯片、PoE、串口、CAN、GPIO 可能失效。
-- Wi-Fi 更可能是厂内焊接/定制可选件，而非用户可随意购买的标准 M.2 卡；售后加装通常要转销售/产品线核实。
+- 客户若既要 Orin 又要 多 PoE + 串口/CAN，现实路径是 **reServer Industrial 类整机**，不是 T506S 换芯。
+- 客户若必须留下手上的 Xavier NX 模组，只能换到仍支持 Xavier 的载板（如 J202），但 **接口能力会明显下降**，通常无法满足原 T506S 的 PoE NVR 形态。
+- 「把 T506S 里的 Xavier 核心拆到我们某张载板」在机械/散热/供电/外壳上几乎等于另做一套；对外不要承诺「模块直挪即用」。
 
 ## 建议
 
-1. 对外：**明确不建议**在 T506S 上更换 Orin NX/Orin Nano。
-2. JetPack：说明出厂 JP4.6；NVIDIA Xavier 天花板 JP5.1.6；T506S 专用 BSP 需内部向产品线/OEM 索取，**暂勿对外承诺可提供完整镜像包**。
-3. 接口连续性：在无 T506S 官方 JP5.x 镜像前，**不能**承诺「刷最新 JetPack 后全部工业接口仍工作」。
-4. Wi-Fi：转销售确认是否仍有可选模组、天线套件、是否需返厂安装；询问客户当前 JetPack 版本与是否可接受返厂。
-5. 若客户目标是 Orin 算力 + 多 PoE，引导评估 **reServer Industrial / reComputer Industrial** 等 Orin 产品线，而不是 T506S 换芯。
+1. 先问清客户目标：**保留 Xavier** 还是 **升级到 Orin**；接口清单哪些是硬性（尤其 5×PoE）。
+2. 保留 Xavier → 告知仍有 **J202** 等 Xavier 载板入口，但接口不匹配 T506S；库存问销售。
+3. 要 Orin + 多 PoE → 引导 **reServer Industrial**，并给对应 Wiki/BSP，不要给 T506S 刷机包。
+4. T506S 本机 BSP：暂不承诺可提供完整 JP5 镜像；内部找产品线确认后再外发。
+5. Wi-Fi：按最终选型产品问销售配件 SKU，不要用通用 8265 攻略硬套 T506S。
 
 ## 禁止
 
-- 禁止回答「260-pin 所以 Orin 可以直接插」。
-- 禁止把 NVIDIA DevKit 或 J202 的刷机包直接发给 T506S 客户当官方方案。
-- 禁止承诺「刷到 JP5.1.6 后 PoE/CAN/RS485 全部正常」。
-- 禁止仅凭通用 Jetson 经验指定某一 Wi-Fi 卡型号给客户购买安装。
-- 库存、报价、是否还能下单 → 转销售，不硬答成技术结论。
-
-## 客服可复制回复（内部稿，待 Wi-Fi/BSP 确认后可外发）
-
-内部判断：不支持 Orin 直换；JP 以出厂 4.6 与定制 BSP 为准；Wi-Fi SKU 与 JP5 BSP 仍待产品线确认。Xavier 载板商详仍有 J202 等在售入口，库存问销售。
+- 禁止只按「本机换 Orin」回答而忽略「换载板」主意图（在内部已明确关注 Xavier 载板在售的情况下）。
+- 禁止说 J202 能覆盖 T506S 的 5×PoE 等工业接口。
+- 禁止承诺 T506S 本机刷最新 JetPack 后全接口仍可用。
+- 禁止把库存写成技术保证。
 
 ## 相关链接
 
 - [T506S 商详](https://www.seeedstudio.com/Mini-AI-Computer-T506S-with-Jetson-Xavier-NX-8GB-p-5507.html)
-- [TWOWIN TW-T506S User Guide](https://twowintech.com/wp-content/uploads/2025/07/TW-T506S-User-Guide.pdf)
-- [NVIDIA JetPack Archive](https://developer.nvidia.com/embedded/jetpack-archive)
-- [NVIDIA Orin vs Xavier carrier FAQ 讨论](https://forums.developer.nvidia.com/t/can-i-connect-jetson-orin-nx-16-board-to-xavier-nx-carrier-board/241776/4)
+- [J202 Wiki](https://wiki.seeedstudio.com/reComputer_J2021_J202_Flash_Jetpack/)
+- [reServer Industrial Getting Started](https://wiki.seeedstudio.com/reServer_Industrial_Getting_Started/)
+- [Xavier 载板是否仍在售 FAQ](../faq/seeed-xavier-nx-carrier-boards-availability.md)
