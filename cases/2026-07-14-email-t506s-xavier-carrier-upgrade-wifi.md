@@ -21,12 +21,13 @@ confidence: need_review
 1. **Orin 直插 T506S：不支持对外承诺**  
    NVIDIA 为外形兼容、非 pin 兼容；Seeed/OEM 公开规格仅 Xavier NX。
 
-2. **原 Xavier 配置 JetPack**  
-   出厂 **JP 4.6**；NVIDIA Xavier 天花板 **JP 5.1.6**；JP6/7 不含 Xavier。  
-   T506S 定制 BSP，**不能**承诺 DevKit JP5.1.6 可刷且全工业口正常。
+2. **原 Xavier 配置 JetPack / BSP**  
+   可提供支持到 **JetPack 4.6.1** 的包：  
+   https://pan.baidu.com/s/17XiGh-tOFTh8RjGj4uUUjw?pwd=fgr7 （pwd: `fgr7`）  
+   **无 JetPack 5 BSP** 可提供。
 
-3. **BSP / 镜像 / DT / 安装说明**  
-   公开 Wiki **未见** T506S 刷机页；暂勿对外打包承诺。转产品线/OEM 确认后才能发。
+3. **Orin 模组升级**  
+   不支持。
 
 4. **全接口 +「最新软件」**  
    无定制镜像验证前，**禁止承诺** Ethernet/PoE/USB/NVMe/CAN/RS232/RS485/GPIO/HDMI/Wi-Fi/BT 在最新软件下全部仍可用。
