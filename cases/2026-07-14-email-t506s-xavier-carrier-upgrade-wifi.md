@@ -16,17 +16,21 @@ confidence: need_review
 ## 答复要点（最新）
 
 1. **Orin**：不支持本机换模组。
-2. **BSP**：仅 **JetPack 4.6.1**；无 JP5。原百度链改为 **OneDrive**（外发邮件填入具体链接）。含刷机说明。
-3. **Wi‑Fi**：贴片；图为/OEM 无法提供可公开的精确料号（2022 代售上架，相关资料已遗失）。**不建议客户自行采购焊接**。可转售后评估是否**寄回加装/升级**。
-4. **转交**：售后同事处理 RMA/寄回评估。
+2. **BSP**：Seeed 现网发 **JetPack 4.6.1**（OneDrive）。客户反馈包内多为注意事项、缺刷机教程。
+3. **刷机文档补齐**：图为资源中心有公开材料——`Readme_T506S.pdf`（版本/网盘入口）+ 中英文手册（Recover：REC+RES/RST + Micro-USB OTG + `lsusb`）。完整烧录命令在**镜像包内刷机文件**，公开 PDF 不写死 `flash.sh` 行。OEM Readme 另列 JP5.1.1（V2.3）百度链，**对客是否承诺 JP5 待内部确认**。
+4. **Wi‑Fi**：贴片；无精确料号；**不建议客户自行采购焊接**；转售后评估**寄回加装**。
+5. **转交**：售后 RMA/寄回评估。
 
 ## 知识库更新
 
-- [x] staging / case 同步（代售、资料遗失、返厂 Wi‑Fi、OneDrive BSP）
+- [x] staging：刷机文档入口、Recover 步骤、JP5.1.1 待确认、Wi‑Fi RMA
 
 ## 来源
 
 - 内部确认（代售 T506S；图为客服；JP4.6.1 包）
+- https://www.twowinit.com/jetsonxaviernx11/441.html
+- https://www.twowinit.com/web/userfiles/articlefile/systemos/Readme_T506S.pdf
+- https://www.twowinit.com/web/userfiles/articlefile/userguide/T506S-E4-BD-BF-E7-94-A8-E8-AF-B4-E6-98-8E-E6-89-8B-E5-86-8C.pdf
 - https://www.seeedstudio.com/Mini-AI-Computer-T506S-with-Jetson-Xavier-NX-8GB-p-5507.html
 
 ## PR

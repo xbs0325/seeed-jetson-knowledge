@@ -15,6 +15,9 @@ date: 2026-07-14
 source_links:
   - https://www.seeedstudio.com/Mini-AI-Computer-T506S-with-Jetson-Xavier-NX-8GB-p-5507.html
   - https://www.pi-shop.ch/mini-ai-computer-t506s
+  - https://www.twowinit.com/jetsonxaviernx11/441.html
+  - https://www.twowinit.com/web/userfiles/articlefile/systemos/Readme_T506S.pdf
+  - https://www.twowinit.com/web/userfiles/articlefile/userguide/T506S-E4-BD-BF-E7-94-A8-E8-AF-B4-E6-98-8E-E6-89-8B-E5-86-8C.pdf
   - https://twowintech.com/wp-content/uploads/2025/07/TW-T506S-User-Guide.pdf
   - https://developer.nvidia.com/embedded/jetpack-archive
   - https://forums.developer.nvidia.com/t/can-i-connect-jetson-orin-nx-16-board-to-xavier-nx-carrier-board/241776/4
@@ -22,8 +25,8 @@ source_links:
   - https://pan.baidu.com/s/17XiGh-tOFTh8RjGj4uUUjw?pwd=fgr7
 status: need_review
 review_target: docs/seeed_device/mini-ai-computer
-review_reason: "代售确认：无 Orin/JP5；BSP 仅 JP4.6.1 网盘；Wi-Fi 贴片建议客户自行加装，料号仍非官方定稿"
-next_action: "若对外长期复用，可迁 faq；Wi-Fi 精确料号仍建议有 BOM 再改 active"
+review_reason: "OEM 官网公开有系统镜像 Readme（含 JP4.x/JP5.1.1 百度链）与中文手册 Recovery 步骤；Seeed 现网对客仍以 JP4.6.1 OneDrive 为主；Wi-Fi 走返厂；JP5.1.1 是否可对外承诺待确认"
+next_action: "核对 OneDrive 是否含包内刷机脚本（非仅注意事项）；若可对外复用将刷机节迁 faq；JP5.1.1 是否支持需产品线确认"
 ---
 
 # Mini AI Computer T506S：本机升模组、JetPack/BSP、接口与 Wi-Fi（待确认）
@@ -51,15 +54,34 @@ next_action: "若对外长期复用，可迁 faq；Wi-Fi 精确料号仍建议�
 
 | 层级 | 版本 |
 | --- | --- |
-| T506S 可提供 BSP | **JetPack 4.6.1**（海外优先 **OneDrive**；百度备用：https://pan.baidu.com/s/17XiGh-tOFTh8RjGj4uUUjw?pwd=fgr7 ） |
-| JetPack 5.x BSP | **无**可提供包 |
+| T506S 可提供 BSP（Seeed 现网） | **JetPack 4.6.1**（海外优先 **OneDrive**；百度备用：https://pan.baidu.com/s/17XiGh-tOFTh8RjGj4uUUjw?pwd=fgr7 ） |
+| OEM（图为）公开镜像列表 | Readme 列出 JP4.4 / 4.5 / 4.5.1 / 4.6 / **4.6.1** / **5.1.1**（百度）；硬件后缀 **V1.3 / V2.3**，见设备二维码标签 |
+| JetPack 5.x（对客承诺） | **待确认**：OEM 公开有 `T506S_JP5.1.1_V2.3`；Seeed 此前对客只发 JP4.6.1，**勿自行承诺 JP5** |
 | Orin 模组升级 | **不支持** |
 
 ### BSP / 刷机说明
 
-- 代售定制载板（约 2022 上架）：对外只提供 JP4.6.1 包与刷机说明，**不提供** JetPack 5 BSP。
+- 代售定制载板（约 2022 上架）：Seeed 现网优先发 **JP4.6.1** 完整包（需含刷机脚本，不止「注意事项」）。
 - 海外客户常无法使用百度网盘，应改发 OneDrive / 直链。
 - 不要用 NVIDIA DevKit / J202 包冒充 T506S 升级方案。
+- **不要**用社区 SDK Manager「国产套件」通用教程冒充 T506S 定制镜像流程（会覆盖 OEM 设备树/驱动，PoE 等接口易坏）。
+
+#### OEM 刷机文档入口（2026-07-15 实测可打开）
+
+| 文档 | URL |
+| --- | --- |
+| 图为 T506S 资源页 | https://www.twowinit.com/jetsonxaviernx11/441.html |
+| 系统镜像 / 版本说明 `Readme_T506S.pdf` | https://www.twowinit.com/web/userfiles/articlefile/systemos/Readme_T506S.pdf |
+| 中文使用说明（含 Recover 按键） | https://www.twowinit.com/web/userfiles/articlefile/userguide/T506S-E4-BD-BF-E7-94-A8-E8-AF-B4-E6-98-8E-E6-89-8B-E5-86-8C.pdf |
+| 英文 User Guide（Recover 同款） | https://twowintech.com/wp-content/uploads/2025/07/TW-T506S-User-Guide.pdf |
+
+#### Recover 模式（手册原文要点）
+
+1. 主机：x86 Ubuntu（OEM Readme 建议优先物理机；JP4.6.1 常用 18.04）。
+2. 用 **Micro-USB（USB-OTG，刷机口）** 连主机；主机侧建议 USB 3.0 口、数据线需能传数据。
+3. 进入 Recover：先按住 **REC** → 再按住 **RES/RST** → 约 2 秒后先松 **RES/RST** → 再松 **REC**。
+4. 主机执行 `lsusb`，出现 **NVIDIA Corp** / APX 即成功。
+5. 解压对应硬件版本镜像包后，按包内 **刷机说明 / 刷机须知 / 脚本** 执行（`Readme_T506S.pdf` 写明「根据里面的刷机文件进行操作」）。公开 PDF **不含**完整 `flash.sh` 命令行；命令在镜像包内。
 
 ### 全接口在「最新软件」下是否仍支持
 
@@ -90,7 +112,7 @@ next_action: "若对外长期复用，可迁 faq；Wi-Fi 精确料号仍建议�
 ## 建议
 
 1. 明确告知：**T506S 载板不支持对外承诺的 Orin NX/Orin Nano 模组升级。**
-2. JetPack：说明出厂 4.6；Xavier 官方上限 5.1.6；T506S 若要升版软件须等/索取定制 BSP，暂不承诺可立即提供。
+2. JetPack：对客优先给 **JP4.6.1** 完整包 + Recover 步骤 + OEM 手册/Readme 链接；**勿主动承诺 JP5.1.1**，除非内部确认可支持且硬件为对应 V1.3/V2.3。
 3. 接口：在无验证镜像前，不对「最新软件下全接口仍支持」做保证。
 4. Wi-Fi：内部问销售有无可选模组与是否返厂安装。
 5. 若客户坚持要 Orin：引导 reComputer / reServer Industrial 等 Orin 产品线，并说明接口需重新选型匹配。
