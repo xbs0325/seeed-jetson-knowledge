@@ -2,55 +2,32 @@
 date: 2026-07-14
 channel: zoho
 product: Mini AI Computer T506S (SKU 114110167, Jetson Xavier NX 8GB)
+customer: Robert Ranete
 resolved: partial
 confidence: need_review
 ---
 
 ## 问题摘要
 
-英文客户拥有 Mini AI Computer T506S（Xavier NX 8GB），核心意图是：
+英文客户 T506S（Xavier NX 8GB）：Orin 升级、JetPack/BSP、Wi‑Fi 料号。
 
-**现有 T506S 载板能否升级到更新的 260-pin 模组（Orin NX / Orin Nano）**，并配套问 JetPack、BSP/镜像/设备树、全接口是否仍可用、可加装 Wi-Fi/BT 型号。
+跟进（2026-07-15）：客户无法用百度网盘（需注册），要求 OneDrive/直链等；并索要 JP4.6.1 支持的精确 SMT Wi‑Fi 厂商与料号。
 
-内部另有关注：Seeed 是否还有支持 Xavier 系列的载板在售（旁支，非客户主问）。
+## 答复要点（最新）
 
-> 备注：中间曾误判成「换载板」；按英文原句应以 **本机升模组** 为主答。
-
-## 答复要点
-
-1. **Orin 直插 T506S：不支持对外承诺**  
-   NVIDIA 为外形兼容、非 pin 兼容；Seeed/OEM 公开规格仅 Xavier NX。
-
-2. **原 Xavier 配置 JetPack / BSP**  
-   可提供支持到 **JetPack 4.6.1** 的包：  
-   https://pan.baidu.com/s/17XiGh-tOFTh8RjGj4uUUjw?pwd=fgr7 （pwd: `fgr7`）  
-   **无 JetPack 5 BSP** 可提供。
-
-3. **Orin 模组升级**  
-   不支持。
-
-4. **全接口 +「最新软件」**  
-   无定制镜像验证前，**禁止承诺** Ethernet/PoE/USB/NVMe/CAN/RS232/RS485/GPIO/HDMI/Wi-Fi/BT 在最新软件下全部仍可用。
-
-5. **Wi-Fi**  
-   可选表面贴装，标准件不含；公开 **无** 售后自装精确 SKU → 销售/产品线确认。
-
-6. **Xavier 载板是否还在售（内部旁支）**  
-   商详仍见 J202 / J2021 / Industrial J2012 / T506S；A203 停产。库存问销售。
+1. **Orin**：不支持本机换模组。
+2. **BSP**：仅 **JetPack 4.6.1**；无 JP5。原百度链改为 **OneDrive**（外发邮件填入具体链接）。含刷机说明。
+3. **Wi‑Fi**：贴片；图为/OEM 无法提供可公开的精确料号（2022 代售上架，相关资料已遗失）。**不建议客户自行采购焊接**。可转售后评估是否**寄回加装/升级**。
+4. **转交**：售后同事处理 RMA/寄回评估。
 
 ## 知识库更新
 
-- [x] staging：主叙事改回「本机升模组」
-- [x] FAQ：Xavier 载板在售（旁支）
-- [x] INDEX / case 同步
+- [x] staging / case 同步（代售、资料遗失、返厂 Wi‑Fi、OneDrive BSP）
 
 ## 来源
 
+- 内部确认（代售 T506S；图为客服；JP4.6.1 包）
 - https://www.seeedstudio.com/Mini-AI-Computer-T506S-with-Jetson-Xavier-NX-8GB-p-5507.html
-- https://twowintech.com/wp-content/uploads/2025/07/TW-T506S-User-Guide.pdf
-- https://developer.nvidia.com/embedded/jetpack-archive
-- https://forums.developer.nvidia.com/t/can-i-connect-jetson-orin-nx-16-board-to-xavier-nx-carrier-board/241776/4
-- https://www.seeedstudio.com/reComputer-J202-Carrier-Board-for-Jetson-Xavier-NX-p-5397.html
 
 ## PR
 

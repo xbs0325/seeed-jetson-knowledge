@@ -19,10 +19,11 @@ source_links:
   - https://developer.nvidia.com/embedded/jetpack-archive
   - https://forums.developer.nvidia.com/t/can-i-connect-jetson-orin-nx-16-board-to-xavier-nx-carrier-board/241776/4
   - https://www.seeedstudio.com/reComputer-J202-Carrier-Board-for-Jetson-Xavier-NX-p-5397.html
+  - https://pan.baidu.com/s/17XiGh-tOFTh8RjGj4uUUjw?pwd=fgr7
 status: need_review
 review_target: docs/seeed_device/mini-ai-computer
-review_reason: "T506S 缺公开 Wiki/BSP；Wi-Fi 售后 SKU 与是否存在任何 Orin 兼容验证需产品线确认"
-next_action: "产品线确认：①本机可否 Orin；②可提供的 JP/BSP；③Wi-Fi 模组 SKU"
+review_reason: "代售确认：无 Orin/JP5；BSP 仅 JP4.6.1 网盘；Wi-Fi 贴片建议客户自行加装，料号仍非官方定稿"
+next_action: "若对外长期复用，可迁 faq；Wi-Fi 精确料号仍建议有 BOM 再改 active"
 ---
 
 # Mini AI Computer T506S：本机升模组、JetPack/BSP、接口与 Wi-Fi（待确认）
@@ -46,20 +47,19 @@ next_action: "产品线确认：①本机可否 Orin；②可提供的 JP/BSP；
 - Seeed 商详 / OEM（TW-T506S）规格 **仅 Xavier NX**，无 Orin 支持声明。
 - 对外结论：**不建议、不承诺** 在 T506S 上更换 Orin NX 或 Orin Nano。若要 Orin，应选购 Orin 载板/整机（如 reComputer / reServer Industrial 等）。
 
-### 原 Xavier NX 配置的 JetPack
+### 原 Xavier NX 配置的 JetPack / BSP（内部确认）
 
 | 层级 | 版本 |
 | --- | --- |
-| T506S 出厂宣传 | **JetPack 4.6** |
-| NVIDIA Xavier 官方最新 | **JetPack 5.1.6 / L4T 35.6.4** |
-| JetPack 6.x / 7.x | **不支持** Xavier NX |
+| T506S 可提供 BSP | **JetPack 4.6.1**（海外优先 **OneDrive**；百度备用：https://pan.baidu.com/s/17XiGh-tOFTh8RjGj4uUUjw?pwd=fgr7 ） |
+| JetPack 5.x BSP | **无**可提供包 |
+| Orin 模组升级 | **不支持** |
 
-### BSP / 刷机镜像 / 设备树 / 安装说明
+### BSP / 刷机说明
 
-- Seeed Wiki 有 T906 刷机页；检索时 **未见 T506S 对等 Wiki / 官方镜像下载入口**。
-- 公开 Seeed Linux_for_Tegra / DevelopTool 列表以 Orin 类 reComputer/reServer 为主，**未列 T506S**。
-- OEM 手册：接口驱动为定制；恢复模式为 REC+RST；警告勿随意 `apt upgrade` 覆盖内核/设备树。
-- 现状：**不能**把 NVIDIA Xavier DevKit 或 J202 的 BSP 当成 T506S 官方升级包外发。
+- 代售定制载板（约 2022 上架）：对外只提供 JP4.6.1 包与刷机说明，**不提供** JetPack 5 BSP。
+- 海外客户常无法使用百度网盘，应改发 OneDrive / 直链。
+- 不要用 NVIDIA DevKit / J202 包冒充 T506S 升级方案。
 
 ### 全接口在「最新软件」下是否仍支持
 
@@ -74,9 +74,8 @@ next_action: "产品线确认：①本机可否 Orin；②可提供的 JP/BSP；
 - 商详：Wi-Fi 为 surface mounted / optional，**modules not included**。
 - M.2 E 在商详语境更偏 5G；Wi-Fi 与 DevKit 常见「自插 M.2 Key E 卡」不同。
 - 官方标注底板图（商详/分销图）上，Wi-Fi 位可见丝印旁贴装模组；屏蔽罩品牌字样可读为 **Cdtech（中龙通）**，双 IPEX/U.FL，邮票孔贴装。
-- 识图候选：**CDW-63822CU-01**（RTL8822CU，Wi‑Fi 5 2T2R + BT，**USB**）。同厂还有外观接近的 **CDW-47822CS**（RTL8822CS，**SDIO**/UART）等。`CU` 与 `CS` **总线与焊盘不同，不可互换**。
-- **未经 BOM/产品线确认前，不得把任一料号当最终可焊件外发。**
-- 正确路径：销售/产品确认 T506S 可选 Wi‑Fi 官方料号与是否支持返厂加装；禁止引导客户自行对不符封装的模块进行焊接。
+- 识图候选（内部）：**CDW-63822CU-01**（RTL8822CU / USB）；对比 **CDW-47822CS**（RTL8822CS / SDIO）。`CU`/`CS` 不可互换。
+- **对外口径（2026-07-15 内部确认）**：OEM/图为无法提供可公开的精确料号；相关选配资料视为已遗失。**不要**再建议客户自行购买焊接。可转售后评估**寄回加装**是否可行。
 
 ### 旁支：Xavier 载板是否仍在售
 
