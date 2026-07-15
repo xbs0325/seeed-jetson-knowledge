@@ -19,8 +19,8 @@ confidence: need_review
 2. **BSP**：Seeed 现网发 **JetPack 4.6.1**（OneDrive）。客户反馈包内多为注意事项、缺刷机教程。
 3. **刷机**：OneDrive 替代百度；Recover（REC+RES/RST + Micro-USB）；包内示例  
    `cd JetPack_4.6_Linux_JETSON_XAVIER_NX_TARGETS` → `./nx.t506s.v1.3.flash.sh`（**v1.3 待核对**，以标签/包内脚本为准）。
-4. **Wi‑Fi**：此前对外写过可自行 SMT 加装；跟进委婉收回——无经确认精确料号，建议售后寄回评估加装，勿再指导自购焊接。
-5. **转交**：售后 RMA/寄回评估。
+4. **Wi‑Fi**：跟进明确致歉并纠正此前「可自行安装」；无精确料号；建议售后寄回评估加装并转 RMA。
+5. **转交**：售后 RMA/寄回评估。邮件跟进不再重复 Orin/JP5（首封已答）。
 
 ## 知识库更新
 
