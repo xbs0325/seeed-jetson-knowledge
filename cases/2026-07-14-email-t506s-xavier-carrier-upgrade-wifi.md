@@ -17,8 +17,9 @@ confidence: need_review
 
 1. **Orin**：不支持本机换模组。
 2. **BSP**：Seeed 现网发 **JetPack 4.6.1**（OneDrive）。客户反馈包内多为注意事项、缺刷机教程。
-3. **刷机文档补齐**：图为资源中心有公开材料——`Readme_T506S.pdf`（版本/网盘入口）+ 中英文手册（Recover：REC+RES/RST + Micro-USB OTG + `lsusb`）。完整烧录命令在**镜像包内刷机文件**，公开 PDF 不写死 `flash.sh` 行。OEM Readme 另列 JP5.1.1（V2.3）百度链，**对客是否承诺 JP5 待内部确认**。
-4. **Wi‑Fi**：贴片；无精确料号；**不建议客户自行采购焊接**；转售后评估**寄回加装**。
+3. **刷机**：OneDrive 替代百度；Recover（REC+RES/RST + Micro-USB）；包内示例  
+   `cd JetPack_4.6_Linux_JETSON_XAVIER_NX_TARGETS` → `./nx.t506s.v1.3.flash.sh`（**v1.3 待核对**，以标签/包内脚本为准）。
+4. **Wi‑Fi**：此前对外写过可自行 SMT 加装；跟进委婉收回——无经确认精确料号，建议售后寄回评估加装，勿再指导自购焊接。
 5. **转交**：售后 RMA/寄回评估。
 
 ## 知识库更新

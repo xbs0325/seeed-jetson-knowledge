@@ -81,7 +81,14 @@ next_action: "核对 OneDrive 是否含包内刷机脚本（非仅注意事项�
 2. 用 **Micro-USB（USB-OTG，刷机口）** 连主机；主机侧建议 USB 3.0 口、数据线需能传数据。
 3. 进入 Recover：先按住 **REC** → 再按住 **RES/RST** → 约 2 秒后先松 **RES/RST** → 再松 **REC**。
 4. 主机执行 `lsusb`，出现 **NVIDIA Corp** / APX 即成功。
-5. 解压对应硬件版本镜像包后，按包内 **刷机说明 / 刷机须知 / 脚本** 执行（`Readme_T506S.pdf` 写明「根据里面的刷机文件进行操作」）。公开 PDF **不含**完整 `flash.sh` 命令行；命令在镜像包内。
+5. 解压对应硬件版本镜像包后，按包内脚本执行。内部从包内确认的示例命令（**脚本名含硬件版本，V1.3 是否正确需看设备标签 / 包内实际脚本名**）：
+
+```bash
+cd JetPack_4.6_Linux_JETSON_XAVIER_NX_TARGETS
+./nx.t506s.v1.3.flash.sh
+```
+
+若硬件为 V2.3，包内可能是 `nx.t506s.v2.3.flash.sh`（或同类命名）；进入目录后先 `ls *.flash.sh` / `ls nx.t506s*` 核对再跑。
 
 ### 全接口在「最新软件」下是否仍支持
 
