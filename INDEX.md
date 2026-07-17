@@ -50,6 +50,7 @@
 
 | 条目 | 来源 |
 |------|------|
+| [A603 USB3 ZIF 线材与 MAXN/SUPER 供电](docs/staging/a603-usb3-zif-cable-and-maxn-super-power.md) | [Datasheet](https://files.seeedstudio.com/products/NVIDIA/A603-Carrier-Board-for-Jetsson-Orin-NX-Nano-Datasheet.pdf) + [Wiki](https://wiki.seeedstudio.com/reComputer_A603_Flash_System/) |
 | [Seeed J401/J501 是否支持 JP7.2](docs/staging/seeed-j401-jetpack-7-2-support.md) | [Forum](https://forum.seeedstudio.com/t/nvidia-has-officially-announced-jetpack-7-2-june-1-2026-any-plans-for-j401-agx-orin-32gb-support/295471) |
 | [apt upgrade 与 BSP 冲突](docs/staging/seeed-jetpack-6-apt-upgrade-l4t-kernel-conflict.md) | [issue #41](https://github.com/Seeed-Studio/Linux_for_Tegra/issues/41) |
 | [reServer J4012 PoE](docs/staging/reserver-industrial-j4012-poe-jetpack-6.md) | [Forum](https://forum.seeedstudio.com/t/reserver-industrial-j4012-with-jetpack-6-jetson-orin-nx-16gb-missing-gpio/279727) |
