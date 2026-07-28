@@ -70,3 +70,5 @@ J501/J501 Mini 是 Seeed 自定义机器人载板/整机方案，GMSL、CAN、DI
 - [reComputer Robotics J501 Wiki](https://wiki.seeedstudio.com/ai_robotics_recomputer_j501_robotics_getting_started/)
 - [Robotics J501 Mini Wiki](https://wiki.seeedstudio.com/recomputer_j501_mini_getting_started/)
 - [Seeed Linux_for_Tegra](https://github.com/Seeed-Studio/Linux_for_Tegra)
+- [FAQ：Mini J501 / J5012 GMSL 兼容与标配](../../faq/recomputer-mini-j501-gmsl-camera-compatibility.md)
+- [staging：SKU 100085113 装箱单待确认](../../staging/recomputer-mini-j5012-sku-100085113-bom.md)

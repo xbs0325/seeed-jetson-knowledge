@@ -20,6 +20,7 @@
 | [AGX Orin 64GB 规格书](docs/faq/agx-orin-64gb-developer-kit-datasheet.md) | NVIDIA |
 | [Orin Nano 无 SD 镜像 (JP7.2)](docs/faq/orin-nano-jetpack-7-2-no-sd-card-image.md) | NVIDIA |
 | [J4012 PREEMPT_RT 内核 (R36.4.3)](docs/faq/j4012-preempt-rt-kernel-seeed-bsp-r3643.md) | Wiki + NVIDIA + GitHub |
+| [Mini J501 / J5012 GMSL 兼容与标配](docs/faq/recomputer-mini-j501-gmsl-camera-compatibility.md) | Wiki + datasheet + 商详 |
 
 ### Seeed 设备
 
@@ -55,6 +56,7 @@
 | [reServer J4012 PoE](docs/staging/reserver-industrial-j4012-poe-jetpack-6.md) | [Forum](https://forum.seeedstudio.com/t/reserver-industrial-j4012-with-jetpack-6-jetson-orin-nx-16gb-missing-gpio/279727) |
 | [reServer J4012 PoE/GPIO 记录](docs/staging/reserver-industrial-j4012-jetpack-6-gpio-poe.md) | 同上 |
 | [Jetson RTC 电池寿命与更换](docs/staging/jetson-rtc-battery-lifespan-replacement.md) | NVIDIA PMIC_BBAT 12–50 µA；CR1220 约 1–5 月 |
+| [Mini J5012 SKU 100085113 装箱单](docs/staging/recomputer-mini-j5012-sku-100085113-bom.md) | 商详未列全 BOM；待产品/销售确认 |
 
 ## 结案日志
 
