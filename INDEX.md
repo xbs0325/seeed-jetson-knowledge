@@ -20,6 +20,7 @@
 | [AGX Orin 64GB 规格书](docs/faq/agx-orin-64gb-developer-kit-datasheet.md) | NVIDIA |
 | [Orin Nano 无 SD 镜像 (JP7.2)](docs/faq/orin-nano-jetpack-7-2-no-sd-card-image.md) | NVIDIA |
 | [J4012 PREEMPT_RT 内核 (R36.4.3)](docs/faq/j4012-preempt-rt-kernel-seeed-bsp-r3643.md) | Wiki + NVIDIA + GitHub |
+| [载板 MIPI CSI 2-lane / 4-lane](docs/faq/seeed-jetson-carrier-mipi-csi-lane-count.md) | Wiki + A608 Datasheet + Catalog |
 
 ### Seeed 设备
 
