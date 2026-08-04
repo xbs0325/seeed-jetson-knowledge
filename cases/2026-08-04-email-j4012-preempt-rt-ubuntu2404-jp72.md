@@ -1,10 +1,10 @@
 ---
 channel: email
-reply_to: user_internal
+reply_to: customer
 product: reComputer Industrial J4012 (Orin NX 16GB)
 issue_type: compatibility
 confidence: confirmed
-final_customer_reply: false
+final_customer_reply: true
 related_case:
   - cases/2026-06-22-email-j4012-preempt-rt-r3643.md
   - cases/2026-06-26-email-j4012-rt-partuuid-boot-fail.md
@@ -38,3 +38,9 @@ Akash Potti（Pace Robotics）此前在 **reComputer Industrial J4012** 上按 S
 - [x] 更新 `INDEX.md`
 - [x] 更新 `docs/staging/seeed-j401-jetpack-7-2-support.md`（Industrial 已有 JP7.2 镜像）
 - [x] 交叉链接既有 R36.4.3 RT FAQ
+
+## 外发英文要点
+
+- Ubuntu 24.04 → JetPack 7.2 / L4T R39.2；先刷 Industrial JP7.2 基线再编 RT。
+- BSP：`r39.2.0` + `./nvbuild.sh -r`；board conf：`recomputer-industrial-orin-j401`。
+- 参考 JP 6.2.1 RT Wiki 结构 + r39.2.0 readme + NVIDIA R39 文档；仍建议 host 编译 + 刷机，并务必更新 initrd。
