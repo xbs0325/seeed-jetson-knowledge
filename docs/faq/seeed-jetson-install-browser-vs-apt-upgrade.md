@@ -21,4 +21,4 @@ status: active
   * 可以自行安装浏览器，例如 `sudo apt install firefox`。请勿习惯性整包 `sudo apt upgrade`；单独安装软件一般没问题。
 * 相关链接
   * [Linux_for_Tegra issue #41](https://github.com/Seeed-Studio/Linux_for_Tegra/issues/41)
-  * [staging：apt upgrade 详情](../staging/seeed-jetpack-6-apt-upgrade-l4t-kernel-conflict.md)
+  * [apt upgrade 与 BSP / bootloader 冲突](seeed-jetpack-6-apt-upgrade-l4t-kernel-conflict.md)

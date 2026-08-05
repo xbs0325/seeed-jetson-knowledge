@@ -43,7 +43,7 @@ status: active
 
 1. NVIDIA Developer Forums 明确：RT kernel deb packages are for **developer kit**；custom board 需手动编译（[NVIDIA Forum](https://forums.developer.nvidia.com/t/are-rt-kernel-package-provided-for-orin-5-1-r36-4-7-miivii-board/357429/2)）。
 2. Seeed 设备使用定制 BSP（板级 DTB、额外驱动、`apply_binaries.sh` 等）。直接 `apt install nvidia-l4t-rt-kernel` 会替换为 NVIDIA DevKit 内核/模块，可能导致 Seeed 载板外设（网口、GPIO、PoE 等）异常。
-3. 参见本仓库 [apt upgrade 与 BSP 冲突](docs/staging/seeed-jetpack-6-apt-upgrade-l4t-kernel-conflict.md) 记录。
+3. 参见本仓库 [apt upgrade 与 BSP 冲突](seeed-jetpack-6-apt-upgrade-l4t-kernel-conflict.md) 记录。
 
 ## 构建环境
 

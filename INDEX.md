@@ -12,6 +12,7 @@
 | [淘宝标题辨析](docs/faq/taobao-title-official-module-vs-nvidia-devkit.md) | [Wiki](https://wiki.seeedstudio.com/recomputer_jetson_super_getting_started/) |
 | [Super 刷机板级名](docs/faq/recomputer-super-j4012-flash-board-name.md) | [BSP Wiki](https://wiki.seeedstudio.com/how_to_build_the_source_code_project_for_seeed_jetson_bsp/) |
 | [装浏览器 vs apt upgrade](docs/faq/seeed-jetson-install-browser-vs-apt-upgrade.md) | [issue #41](https://github.com/Seeed-Studio/Linux_for_Tegra/issues/41) |
+| [apt upgrade 与 BSP / bootloader 板级名冲突](docs/faq/seeed-jetpack-6-apt-upgrade-l4t-kernel-conflict.md) | [Wiki FAQ](https://wiki.seeedstudio.com/Jetson_FAQ/) + [issue #41](https://github.com/Seeed-Studio/Linux_for_Tegra/issues/41) |
 | [Seeed 能否刷 NVIDIA 官方镜像](docs/faq/seeed-device-use-nvidia-official-image.md) | Wiki |
 | [Super GMSL / Arducam](docs/faq/recomputer-super-j401-gmsl-arducam-imx219.md) | Wiki |
 | [Robotics CAN 唤醒](docs/faq/recomputer-robotics-j401-can-wakeup.md) | Wiki |
@@ -51,7 +52,6 @@
 | 条目 | 来源 |
 |------|------|
 | [Seeed J401/J501 是否支持 JP7.2](docs/staging/seeed-j401-jetpack-7-2-support.md) | [Forum](https://forum.seeedstudio.com/t/nvidia-has-officially-announced-jetpack-7-2-june-1-2026-any-plans-for-j401-agx-orin-32gb-support/295471) |
-| [apt upgrade 与 BSP 冲突](docs/staging/seeed-jetpack-6-apt-upgrade-l4t-kernel-conflict.md) | [issue #41](https://github.com/Seeed-Studio/Linux_for_Tegra/issues/41) |
 | [reServer J4012 PoE](docs/staging/reserver-industrial-j4012-poe-jetpack-6.md) | [Forum](https://forum.seeedstudio.com/t/reserver-industrial-j4012-with-jetpack-6-jetson-orin-nx-16gb-missing-gpio/279727) |
 | [reServer J4012 PoE/GPIO 记录](docs/staging/reserver-industrial-j4012-jetpack-6-gpio-poe.md) | 同上 |
 | [Jetson RTC 电池寿命与更换](docs/staging/jetson-rtc-battery-lifespan-replacement.md) | NVIDIA PMIC_BBAT 12–50 µA；CR1220 约 1–5 月 |
