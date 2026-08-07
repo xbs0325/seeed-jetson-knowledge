@@ -28,6 +28,7 @@ status: active
 - Seeed J4012 系列（Orin NX 16GB），JetPack 6.2 / L4T R36.4.3。
 - 含 reComputer J4012、reComputer Industrial J4012、reServer Industrial J4012、reComputer Super J4012 等使用 Seeed `Linux_for_Tegra` BSP 的设备。
 - **不适用**：直接安装 NVIDIA 官方 `nvidia-l4t-rt-kernel` APT 包到 Seeed 载板（见下文说明）。
+- **Ubuntu 24.04 / JetPack 7.2**：见 [J4012 PREEMPT_RT Ubuntu 24.04 (JP7.2 R39.2)](j4012-preempt-rt-kernel-ubuntu2404-jp72-r392.md)，勿复用本文 R36.4.3 包与命令。
 
 ## 结论摘要
 
