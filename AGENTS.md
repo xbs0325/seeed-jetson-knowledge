@@ -12,7 +12,7 @@
 
 完整流程：[`instructions/seeed-jetson-support-assistant.md`](instructions/seeed-jetson-support-assistant.md)  
 回复路由：[`instructions/reply-routing.md`](instructions/reply-routing.md)  
-Skill 摘要：[`.agent/skills/seeed-jetson-support/SKILL.md`](.agent/skills/seeed-jetson-support/SKILL.md)
+Skill 摘要：[`.agent/skills/seeed-jetson-support/SKILL.md`](.agent/skills/seeed-jetson-support/SKILL.md)（Claude：[`.claude/skills/seeed-jetson-support`](.claude/skills/seeed-jetson-support)）
 
 ## 每次回复前
 
