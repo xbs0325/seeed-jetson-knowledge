@@ -13,4 +13,4 @@
 - [`INDEX.md`](../INDEX.md)
 - [`memory/`](../memory/)
 
-> 说明：Cursor 默认还会扫描 `.agents/skills/`、`.cursor/skills/`。本仓库按需求放在 `.agent/skills/`；若需自动发现，可将同名 skill 同步到上述目录，或以 symlink 指向此处。
+> 说明：权威副本在 `.agent/skills/`。Claude Code 发现路径已用 symlink：`.claude/skills/seeed-jetson-support` → `../../.agent/skills/seeed-jetson-support`。若还需 Cursor 自动发现，可同样 symlink 到 `.agents/skills/` 或 `.cursor/skills/`。
