@@ -2,8 +2,8 @@
 product: reComputer Industrial J201/J301/J401 series
 vendor: seeed
 platform: seeed_device
-jetpack: "5.1.3 / 6.x"
-l4t: "35.x / 36.x"
+jetpack: "5.1.3 / 6.x / 7.2"
+l4t: "35.x / 36.x / 39.2"
 tags:
   - recomputer-industrial
   - flashing
@@ -41,9 +41,11 @@ status: active
 
 - 如果无特殊需求，客户可使用预装系统，无需重刷。
 - 重刷时应使用 Seeed 对应型号完整系统镜像，或按 Seeed 方法将 NVIDIA L4T/rootfs 与 Seeed 外设驱动组合。
-- Seeed Wiki 列出 JetPack 5.1.1、5.1.3、6.0、6.1、6.2 相关刷机入口；使用前需按具体型号下载。
-- 推荐物理 Ubuntu host；页面列出 Ubuntu 20.04 host，并说明 JetPack 5.x/6.x host 兼容表。
+- Seeed Wiki 列出 JetPack 5.1.1、5.1.3、6.0、6.1、6.2、**7.2** 相关刷机入口；使用前需按具体型号下载。
+- JetPack 7.2 对应 Ubuntu 24.04 / L4T 39.2；从 JetPack 6.x 升级应完整刷机，勿跨大版本 `apt upgrade`。
+- 推荐物理 Ubuntu host；页面列出 JetPack 5.x/6.x/7.2 与 host Ubuntu 兼容表（JP7.2 刷机可用 20.04/22.04/24.04）。
 - 进入 Force Recovery Mode：Type-C 连接 USB2.0 DEVICE port，按住 RECOVERY 孔内按钮后上电，`lsusb` 应显示对应 Orin NX/Nano USB ID。
+- PREEMPT_RT on Ubuntu 24.04：见 [FAQ — JP7.2 R39.2](../../faq/j4012-preempt-rt-kernel-ubuntu2404-jp72-r392.md)。
 
 ## 售后提示
 
