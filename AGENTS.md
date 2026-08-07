@@ -12,7 +12,8 @@
 
 完整流程：[`instructions/seeed-jetson-support-assistant.md`](instructions/seeed-jetson-support-assistant.md)  
 回复路由：[`instructions/reply-routing.md`](instructions/reply-routing.md)  
-Skill 摘要：[`.agent/skills/seeed-jetson-support/SKILL.md`](.agent/skills/seeed-jetson-support/SKILL.md) · [`.claude/skills/seeed-jetson-support/SKILL.md`](.claude/skills/seeed-jetson-support/SKILL.md)
+Skill 摘要：[`.agent/skills/seeed-jetson-support/SKILL.md`](.agent/skills/seeed-jetson-support/SKILL.md)  
+本地 Claude：可将同内容放到本机 `.claude/skills/seeed-jetson-support/SKILL.md`（该目录已 gitignore，不提交）
 
 ## 每次回复前
 
