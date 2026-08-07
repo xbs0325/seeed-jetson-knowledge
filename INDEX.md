@@ -20,6 +20,7 @@
 | [AGX Orin 64GB 规格书](docs/faq/agx-orin-64gb-developer-kit-datasheet.md) | NVIDIA |
 | [Orin Nano 无 SD 镜像 (JP7.2)](docs/faq/orin-nano-jetpack-7-2-no-sd-card-image.md) | NVIDIA |
 | [J4012 PREEMPT_RT 内核 (R36.4.3)](docs/faq/j4012-preempt-rt-kernel-seeed-bsp-r3643.md) | Wiki + NVIDIA + GitHub |
+| [Super / Industrial J4012 LTE·SIM 配件](docs/faq/recomputer-super-industrial-j4012-lte-sim-accessories.md) | Wiki + Super Bundle + Industrial Also Add |
 
 ### Seeed 设备
 
