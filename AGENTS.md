@@ -11,7 +11,8 @@
 | 结案 | `cases/` |
 
 完整流程：[`instructions/seeed-jetson-support-assistant.md`](instructions/seeed-jetson-support-assistant.md)  
-回复路由：[`instructions/reply-routing.md`](instructions/reply-routing.md)
+回复路由：[`instructions/reply-routing.md`](instructions/reply-routing.md)  
+Skill 摘要：[`.agent/skills/seeed-jetson-support/SKILL.md`](.agent/skills/seeed-jetson-support/SKILL.md)
 
 ## 每次回复前
 
