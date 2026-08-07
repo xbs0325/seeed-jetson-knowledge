@@ -13,4 +13,4 @@
 - [`INDEX.md`](../INDEX.md)
 - [`memory/`](../memory/)
 
-> 说明：权威副本在 `.agent/skills/`。Claude Code 发现路径已用 symlink：`.claude/skills/seeed-jetson-support` → `../../.agent/skills/seeed-jetson-support`。若还需 Cursor 自动发现，可同样 symlink 到 `.agents/skills/` 或 `.cursor/skills/`。
+> 说明：权威工作流仍以 `AGENTS.md` / `instructions/` 为准。Skill 放在 `.agent/skills/`，并在 `.claude/skills/` 放同名副本供 Claude Code 发现（非 symlink，便于在 GitHub 直接打开 `SKILL.md`）。若还需 Cursor 自动发现，可同步到 `.agents/skills/` 或 `.cursor/skills/`。
