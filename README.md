@@ -7,6 +7,7 @@
 | 路径 | 用途 |
 |------|------|
 | [`AGENTS.md`](AGENTS.md) | Agent 入口指令 |
+| [`.agent/skills/`](.agent/skills/) | 技术支持 Skill 摘要（可复用） |
 | [`instructions/`](instructions/) | 完整支持流程 |
 | [`memory/`](memory/) | 偏好与约定（短） |
 | [`INDEX.md`](INDEX.md) | 知识库索引 |
