@@ -6,7 +6,7 @@ product: reComputer Robotics J401 (Jetson Orin NX)
 issue_type: flashing
 resolved: partial
 confidence: need_review
-final_customer_reply: false
+final_customer_reply: true
 customer: Karthikeyan Mahalingam / Nallaperumal Thanthondri
 ---
 
@@ -34,6 +34,12 @@ customer: Karthikeyan Mahalingam / Nallaperumal Thanthondri
 2. **推断**：当前更像「SoM 未出 bootloader / 未正确进 Recovery / 显示口接错」，尚不能下硬件损坏结论。
 3. **建议**：先纠正显示口 → 确认 REC 拨码与串口 → 强制 Recovery 并回传 `lsusb` → 能进则按 Robotics mfi 重刷。
 4. **禁止**：未做 Recovery 实测不断言 RMA；勿给 Classic HDMI / Classic 刷机包。
+
+## 外发要点（2026-08-11）
+
+- 请客户确认：拨 REC → 上电 → Debug 口数据线后，`lsusb` 是否仍无 NVIDIA。
+- 说明显示为 Type-C Host DP，需 DP Alt Mode→HDMI，勿接 Debug 口 / 普通 USB→HDMI。
+- 附 Wiki 刷机/入门链接。
 
 ## 知识库更新
 
