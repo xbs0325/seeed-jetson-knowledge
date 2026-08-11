@@ -15,6 +15,8 @@
 | [Seeed 能否刷 NVIDIA 官方镜像](docs/faq/seeed-device-use-nvidia-official-image.md) | Wiki |
 | [Super GMSL / Arducam](docs/faq/recomputer-super-j401-gmsl-arducam-imx219.md) | Wiki |
 | [Robotics CAN 唤醒](docs/faq/recomputer-robotics-j401-can-wakeup.md) | Wiki |
+| [Robotics J401 显示为 Type-C DP（非 HDMI）](docs/faq/recomputer-robotics-j401-display-dp-not-hdmi.md) | [Wiki](https://wiki.seeedstudio.com/recomputer_robotics_j401_getting_started/) |
+| [Robotics J401 无启动/无串口](docs/faq/recomputer-robotics-j401-no-boot-no-serial.md) | [Wiki](https://wiki.seeedstudio.com/recomputer_robotics_j401_getting_started/) + [Debug Guide](https://wiki.seeedstudio.com/jetson_debug_guide/) |
 | [Classic J401 HDMI 无信号](docs/faq/recomputer-j401-hdmi-no-signal.md) | [Wiki](https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack/) |
 | [GPIO sysfs 缺失](docs/faq/jetpack-6-gpio-sysfs-missing.md) | [GitHub](https://github.com/NVIDIA/jetson-gpio/issues/114) |
 | [AGX Orin 64GB 规格书](docs/faq/agx-orin-64gb-developer-kit-datasheet.md) | NVIDIA |
