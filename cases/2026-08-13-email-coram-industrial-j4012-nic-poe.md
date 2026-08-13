@@ -34,16 +34,18 @@ account: Coram.ai (via Nana Zhou / distributor techsupport)
 
 ## 内部结论
 
-- **BSP 匹配性：已基本确认**（非 DevKit 错刷的典型形态）。
-- **根因：仍需人工确认**——更像「路由/链路灯误解 + PoE 供电或 PSE 硬件」组合，而不是「缺 LAN7430 驱动」。
-- 下步：补日志与单口/PoE 实测；批量 ≥5 台时同步销售/硬件评估抽检或 RMA 路径（非本轮外发承诺）。
+- **渠道客户**：未关闭确认清单前，不对外下根因、不承诺 RMA。
+- **BSP（该测试机）**：日志与 Seeed Industrial 镜像/板级一致；**不能**再把「错 BSP」当主因，但也**不要**引申为整批硬件已定性。
+- **根因**：拓扑、「掉线」含义、LAN2 单口可用性、PoE 相机/电源规格均未确认 → 见 staging 清单 A–F。
+- 下步：先发核实问题；收齐后再判断是配置/接线、供电/相机规格，还是需销售协同硬件抽检。
 
 ## 知识库更新
 
 - [x] `docs/faq/recomputer-industrial-dual-nic-poe-bsp-check.md`（active）
-- [x] `docs/staging/recomputer-industrial-j4012-coram-nic-poe.md`（need_review）
+- [x] `docs/staging/recomputer-industrial-j4012-coram-nic-poe.md`（need_review，已加渠道确认清单）
+- [x] `memory/preferences.md`（渠道客户须先确认关键不明点）
 - [x] 更新 `INDEX.md`
 
 ## 外发
 
-- 本轮仅内部建议；待用户确认方向后再写客户英文邮件。
+- 本轮仅内部建议；用户确认后，外发应以**核实问题为主**，少下结论。
