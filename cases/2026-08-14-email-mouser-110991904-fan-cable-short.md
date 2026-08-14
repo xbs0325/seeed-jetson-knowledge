@@ -1,12 +1,12 @@
 ---
 date: 2026-08-14
 channel: zoho
-reply_to: user_internal
+reply_to: customer
 product: Aluminum Heatsink with Fan SKU 110991904 (Mouser 713-110991904)
 issue_type: accessory
-resolved: partial
+resolved: yes
 confidence: confirmed
-final_customer_reply: false
+final_customer_reply: true
 ---
 
 ## 问题摘要
@@ -22,7 +22,7 @@ Mouser（Manuel Rosario / Yuiho Takasu）转发京都大学客户投诉：发票
 - **资料来源**：客户装配外形图未在英文商详公开区定位到同一文件；可能来自渠道转存/历史附件。代理后还有日本分销（如 Switch Science）。
 - **需转交**：换货/RMA、是否曾内部改线长 → **售后 / 质量 / PM**；技术不承诺线长偏好。
 - **处理建议（内部）**：本批可按尺寸不良；目录无加长线款 110991904；**不要**用 114992746 换 Orin NX。无整机可换时，可个案 **补发 1.25 mm PicoBlade 4P 延长线 ×6**（仓库/采购确认有料），不要让客户改线。
-- 本轮仅内部建议，未生成外发英文。
+- 用户确认后已生成外发英文：本批按缺陷处理；合格范围内在 A603 上仍可能偏短；建议补 4P PicoBlade 延长线，由对应部门跟进。
 
 ## 知识库更新
 
