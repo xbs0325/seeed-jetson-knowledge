@@ -24,6 +24,7 @@ Hi We bought 2 Orin Nano before and the SSD spoil, can i just to confirm if i wa
 - Bazaar 对应：128GB `112990226`、256GB `112990246`、512GB `112990247`、1TB `112990267`、2TB `114993467`。
 - 建议优先推荐 **512GB**（或按原机容量）；换盘后需重刷系统。
 - 若实际为 NVIDIA 官方 DevKit，主槽仍为 2280 Key-M NVMe（另有 2230 槽）。
+- 外发英文忌写 “For Orin Nano replacement”（易被理解成换整机）；应写 “To replace the SSD on your Orin Nano…”。
 
 ## 知识库更新
 
