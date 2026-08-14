@@ -18,7 +18,7 @@ final_customer_reply: true
 - **已确认**：Industrial 载板**无 M.2 Key-E**，不能直接插 RTL8822CE。
 - **已确认**：规格中的 Wi-Fi 指 PCB 预留 **SMD 焊接**位；官方示例 **BL-M8723DU1**；不建议客户自行焊接（易损坏且保修失效）；可走定制。
 - **已确认**：RTL8822CE Wiki 面向 **Classic** reComputer J4012（有 Key-E），勿与 Industrial 混用。
-- 用户确认后已生成外发英文邮件。
+- 用户确认后已生成外发英文邮件；按反馈去掉「Wiki 写明」表述，仅保留硬件参考链接。
 
 ## 知识库更新
 
