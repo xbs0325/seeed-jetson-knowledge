@@ -1,12 +1,12 @@
 ---
 date: 2026-08-14
 channel: zoho
-reply_to: user_internal
+reply_to: customer
 product: reComputer Industrial J4012 (SKU 110110191)
 issue_type: accessory
 resolved: yes
 confidence: confirmed
-final_customer_reply: false
+final_customer_reply: true
 ---
 
 ## 问题摘要
@@ -16,10 +16,9 @@ final_customer_reply: false
 ## 答复要点
 
 - **已确认**：Industrial 载板**无 M.2 Key-E**，不能直接插 RTL8822CE。
-- **已确认**：规格中的 Wi-Fi 指 PCB 预留 **SMD 焊接**位；官方示例 **BL-M8723DU1（RTL8723DU）**，需定制/专业焊接，联系 order@seeed.cc；不建议客户自行焊接（可能影响保修）。
+- **已确认**：规格中的 Wi-Fi 指 PCB 预留 **SMD 焊接**位；官方示例 **BL-M8723DU1**；不建议客户自行焊接（易损坏且保修失效）；可走定制。
 - **已确认**：RTL8822CE Wiki 面向 **Classic** reComputer J4012（有 Key-E），勿与 Industrial 混用。
-- **需转交**：若客户要订制加焊 Wi-Fi、改单、交期/报价 → 销售 / order@seeed.cc。
-- 本轮仅给用户内部建议，未生成外发英文邮件。
+- 用户确认后已生成外发英文邮件。
 
 ## 知识库更新
 
