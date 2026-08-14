@@ -2,8 +2,8 @@
 product: reServer Industrial J3010/J3011/J4011/J4012
 vendor: seeed
 platform: seeed_device
-jetpack: "5.1.1"
-l4t: "35.3.1"
+jetpack: "5.1.1 / 6.x / 7.2"
+l4t: "35.3.1 / 36.x / 39.2"
 tags:
   - reserver-industrial
   - nvr
@@ -46,3 +46,7 @@ status: active
 ## 售后提示
 
 reServer Industrial 不是 NVIDIA 官方开发套件。PoE、DI/DO、COM、CAN、SATA、mini PCIe/M.2 等接口依赖 Seeed 载板硬件与驱动；刷机或升级时必须确认 Seeed 对应型号的镜像/BSP。
+
+若升级后 `lspci` 无 SATA 控制器且 `/proc/device-tree/model` 显示 **NVIDIA … Engineering Reference Developer Kit Super**，说明刷成了 NVIDIA DevKit Super 板级配置，应改用 Wiki / DevelopTool 的 **reServer Industrial** 对应 JP 包重刷。详见 [FAQ：SATA 不可见](../../faq/reserver-industrial-sata-missing-wrong-devkit-image.md)。
+
+Wiki 当前 Flash 页已提供 **JetPack 7.2** mfi（例如 J4012：`mfi_reserver-industrial-orin-nx-16g-7.2.0-39.2.0-…`）；DevelopTool 产品键为 `j4012reserver` + L4T 39.2。

@@ -22,6 +22,7 @@
 | [J4012 PREEMPT_RT 内核 (R36.4.3)](docs/faq/j4012-preempt-rt-kernel-seeed-bsp-r3643.md) | Wiki + NVIDIA + GitHub |
 | [载板 MIPI CSI 2-lane / 4-lane](docs/faq/seeed-jetson-carrier-mipi-csi-lane-count.md) | Wiki + A608 Datasheet + Catalog |
 | [J4012 PREEMPT_RT / Ubuntu 24.04 (JP7.2 R39.2)](docs/faq/j4012-preempt-rt-kernel-ubuntu2404-jp72-r392.md) | Wiki + NVIDIA + GitHub r39.2.0 |
+| [reServer SATA 不可见 / 刷成 DevKit Super](docs/faq/reserver-industrial-sata-missing-wrong-devkit-image.md) | Wiki + DevelopTool + NVIDIA model 字符串 |
 
 ### Seeed 设备
 
