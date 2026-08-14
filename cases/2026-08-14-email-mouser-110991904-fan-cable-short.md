@@ -33,6 +33,8 @@ Mouser（Manuel Rosario / Yuiho Takasu）转发京都大学客户投诉：发票
 ## 来源
 
 - https://www.seeedstudio.com/Aluminum-Heatsink-with-Fan-for-Jetson-Orin-NX-Orin-Nano-Xavier-NX-Module-p-5633.html
+- https://files.seeedstudio.com/wiki/Orin_Nano_Fan/heatsink_datasheet.pdf
+- https://www.switch-science.com/products/9229
 - https://www.seeedstudio.com/A603-Carrier-Board-for-Jetson-Orin-NX-Nano-p-5635.html
 - https://wiki.seeedstudio.com/reComputer_A603_Flash_System/
 - Mouser/客户附件：外形尺寸图（110±10 mm）、实测算尺图、A603 安装未达座照片
