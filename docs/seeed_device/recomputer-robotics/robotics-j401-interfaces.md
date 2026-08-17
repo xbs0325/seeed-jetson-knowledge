@@ -33,6 +33,7 @@ status: active
   - 1x USB 3.0 Type-C Host/DP 1.4
   - 1x USB 2.0 Type-C Device/Debug
   - M.2 Key M、M.2 Key E、M.2 Key B
+  - Wi-Fi/BT 走 **M.2 Key E**（不标配）；官方配件为 RTL8822CE Wireless NIC Kits（SKU **E24121001**）。详见 [Wi-Fi/BT 选型 FAQ](../../faq/recomputer-robotics-j401-wifi-bt-module.md)
   - CAN0/CAN1、UART、2x I2C、GMSL2 camera expansion header
   - 5V PWM fan 与 12V PWM fan
   - 19-54V XT30(2+2) 供电
