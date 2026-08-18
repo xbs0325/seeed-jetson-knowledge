@@ -23,9 +23,11 @@ status: active
   * 默认不能直接套用。Seeed 设备使用自定义载板、接口、电源、设备树和 BSP，应优先使用 Seeed 对应型号 Wiki、镜像、BSP 和 flash config。
 * 注意事项
   * NVIDIA 官方开发套件流程只对官方开发套件成立，不能默认覆盖 Seeed 载板。
-  * 如果客户已经刷入 NVIDIA 官方镜像后出现 CAN、GPIO、PoE、CSI、风扇、网口或 M.2 异常，应先核对 Seeed BSP/设备树是否缺失。
+  * 如果客户已经刷入 NVIDIA 官方镜像后出现 CAN、GPIO、PoE、CSI、风扇、网口、M.2 或 **SATA** 异常，应先核对 Seeed BSP/设备树是否缺失。
+  * 典型误判信号：`cat /proc/device-tree/model` 显示 **NVIDIA … Engineering Reference Developer Kit Super**（见 [reServer SATA FAQ](reserver-industrial-sata-missing-wrong-devkit-image.md)）。
   * 只有 Seeed 文档明确说明某个 NVIDIA 流程可用于该型号时，才能按通用流程处理。
 * 相关链接
   * [Seeed reComputer J401/J301 Flash JetPack](https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack/)
   * [Seeed reComputer Super Getting Started](https://wiki.seeedstudio.com/recomputer_jetson_super_getting_started/)
   * [Seeed reServer Industrial Getting Started](https://wiki.seeedstudio.com/reServer_Industrial_Getting_Started/)
+  * [reServer SATA 不可见 / 刷成 DevKit Super](reserver-industrial-sata-missing-wrong-devkit-image.md)
