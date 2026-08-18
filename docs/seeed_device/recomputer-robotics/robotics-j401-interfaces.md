@@ -13,6 +13,10 @@ tags:
   - interfaces
 date: 2026-06-10
 source_url: https://wiki.seeedstudio.com/recomputer_jetson_robotics_j401_getting_started/
+source_links:
+  - https://wiki.seeedstudio.com/recomputer_jetson_robotics_j401_getting_started/
+  - https://www.seeedstudio.com/reComputer-Robotics-J401-Carrier-Board-optional-accessories.html
+  - https://www.seeedstudio.com/RTL8822CE-Wireless-NIC-Kits-for-Nvidia-Jetson-Orin.html
 status: active
 ---
 
@@ -32,8 +36,8 @@ status: active
   - 6x USB 3.2 Type-A
   - 1x USB 3.0 Type-C Host/DP 1.4
   - 1x USB 2.0 Type-C Device/Debug
-  - M.2 Key M、M.2 Key E、M.2 Key B
-  - CAN0/CAN1、UART、2x I2C、GMSL2 camera expansion header
+  - M.2 Key M、M.2 Key E（Wi-Fi/BT，官方选配 RTL8822CE SKU E24121001）、M.2 Key B（5G）
+  - CAN0/CAN1、UART、2x I2C、GMSL2 camera expansion header（GMSL 扩展板不占用 Key E）
   - 5V PWM fan 与 12V PWM fan
   - 19-54V XT30(2+2) 供电
 
