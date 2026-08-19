@@ -14,8 +14,8 @@ date: 2026-06-12
 source_url: https://github.com/Seeed-Studio/Linux_for_Tegra/issues/41
 status: need_review
 review_target: docs/faq
-review_reason: "Seeed issue is closed and the conclusion is reusable, but latest per-product Wiki should be checked before promotion."
-next_action: "If still consistent with current Wiki/BSP guidance, promote to active FAQ and update INDEX.md."
+review_reason: "Background on bare apt upgrade risk; active upgrade SOP now in j401-safe-upgrade-jetpack-6-2-2-r365.md."
+next_action: "Keep as conflict background; point customers to active FAQ + DevelopTool OTA for JP6.2→6.2.2."
 ---
 
 * 问题
@@ -24,7 +24,8 @@ next_action: "If still consistent with current Wiki/BSP guidance, promote to act
   * Seeed reComputer、reComputer Industrial、reServer Industrial、Robotics 等使用 Seeed 自定义 BSP/设备树的 Jetson 设备；GitHub 案例为 reComputer mini carrier board。
 * 适用平台类型：seeed_device
 * 简洁答案
-  * 不建议在 Seeed 自定义 BSP 设备上直接执行完整 `sudo apt upgrade`。Seeed GitHub issue 中维护者说明：`apt upgrade` 会更新官方 BSP 包，可能与 Seeed 自定义 BSP 冲突，导致系统异常。需要升级时应优先按 Seeed Wiki/BSP/OTA 指南处理。
+  * 不建议在 Seeed 自定义 BSP 设备上**裸跑**完整 `sudo apt upgrade`（未安装 Seeed 安全升级 hook 前）。issue #41 说明这会拉取 NVIDIA 官方 L4T 包并覆盖 Seeed BSP。
+  * **JP6.2/6.2.1 → 6.2.2（R36.5）** 已确认路径：优先 [Seeed Jetson Developer Tool OTA](../faq/j401-safe-upgrade-jetpack-6-2-2-r365.md)；备选 [r36.5.0 seeed-linux-bsp-upgrader](https://github.com/Seeed-Studio/Linux_for_Tegra/releases/tag/r36.5.0) 后再 `apt upgrade`。
 * 注意事项
   * 已确认来源为 Seeed-Studio/Linux_for_Tegra issue #41，状态 closed；仍建议售后正式回复前按具体型号复核最新 Wiki。
   * issue 中失败包包括 `nvidia-l4t-bootloader`、`nvidia-l4t-kernel`、`nvidia-l4t-kernel-headers`、`nvidia-l4t-jetson-io`、`nvidia-l4t-kernel-oot-modules`、`nvidia-l4t-display-kernel`、`nvidia-l4t-kernel-oot-headers`、`nvidia-l4t-kernel-dtbs`。

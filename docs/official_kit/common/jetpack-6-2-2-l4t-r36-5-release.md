@@ -36,11 +36,18 @@ status: active
 
 - Jetson Orin Nano Developer Kit 的 SD Card 方法：先使用 JetPack 6.2.1 / Jetson Linux 36.4.4 SD 卡镜像，再通过 APT 升级到 JetPack 6.2.2 / Jetson Linux 36.5。
 - 官方开发套件还可使用 SDK Manager 或 manual flash；具体步骤以 NVIDIA 对应 Developer Guide 为准。
-- 对 Seeed 设备，NVIDIA 官方 `r36.5` APT/dist-upgrade 流程不能默认直接使用；应先查 Seeed 对应型号是否发布 r36.5/JetPack 6.2.2 镜像、BSP 或 OTA 说明。
+- 对 Seeed 设备，NVIDIA 官方 `r36.5` APT/dist-upgrade 流程不能默认直接使用；应走 Seeed 安全升级路径（见下）。
+
+## Seeed 设备（J401 等）安全升级至 6.2.2
+
+- Seeed 已发布 [Linux_for_Tegra r36.5.0](https://github.com/Seeed-Studio/Linux_for_Tegra/releases/tag/r36.5.0)（`seeed-linux-bsp-upgrader` + upgrade bundle），用于 R36.x → R36.5.0 同大版本升级。
+- **售后首推**：[Seeed Jetson Developer Tool](https://github.com/Seeed-Projects/Seeed-Jetson-DevelopTool) 的 **OTA Update** 引导流程（SSH 连接 → 选产品 → 按向导升级）。
+- **备选**：设备端手动安装 upgrader 后再 `apt upgrade`（Release 页 SOP）。
+- 详见本仓库 [J401 安全升级至 6.2.2 FAQ](../faq/j401-safe-upgrade-jetpack-6-2-2-r365.md)。
 
 ## 售后提示
 
-客户问“JetPack 6 最新小版本是多少”时，可答 JetPack 6.2.2 / L4T 36.5 已发布，主要是安全与已知问题修复。若客户使用 Seeed 盒子/载板/整机，应继续核对 Seeed 对应型号 Wiki 或 BSP，不要承诺直接把 NVIDIA 官方开发套件升级命令用于 Seeed 设备。
+客户问“JetPack 6 最新小版本是多少”时，可答 JetPack 6.2.2 / L4T 36.5 已发布，主要是安全与已知问题修复。若客户使用 Seeed J401 等载板/整机，引导 **DevelopTool OTA 或 r36.5.0 upgrader**，不要照搬 NVIDIA 官方 DevKit 裸 `apt upgrade` 命令。
 
 ## 相关链接
 

@@ -12,6 +12,7 @@
 | [淘宝标题辨析](docs/faq/taobao-title-official-module-vs-nvidia-devkit.md) | [Wiki](https://wiki.seeedstudio.com/recomputer_jetson_super_getting_started/) |
 | [Super 刷机板级名](docs/faq/recomputer-super-j4012-flash-board-name.md) | [BSP Wiki](https://wiki.seeedstudio.com/how_to_build_the_source_code_project_for_seeed_jetson_bsp/) |
 | [装浏览器 vs apt upgrade](docs/faq/seeed-jetson-install-browser-vs-apt-upgrade.md) | [issue #41](https://github.com/Seeed-Studio/Linux_for_Tegra/issues/41) |
+| [J401 安全升级至 JP 6.2.2（R36.5）](docs/faq/j401-safe-upgrade-jetpack-6-2-2-r365.md) | [r36.5.0 Release](https://github.com/Seeed-Studio/Linux_for_Tegra/releases/tag/r36.5.0) + [DevelopTool](https://github.com/Seeed-Projects/Seeed-Jetson-DevelopTool) |
 | [Seeed 能否刷 NVIDIA 官方镜像](docs/faq/seeed-device-use-nvidia-official-image.md) | Wiki |
 | [Super GMSL / Arducam](docs/faq/recomputer-super-j401-gmsl-arducam-imx219.md) | Wiki |
 | [Robotics CAN 唤醒](docs/faq/recomputer-robotics-j401-can-wakeup.md) | Wiki |
