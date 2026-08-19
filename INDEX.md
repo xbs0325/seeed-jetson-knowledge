@@ -22,6 +22,7 @@
 | [J4012 PREEMPT_RT 内核 (R36.4.3)](docs/faq/j4012-preempt-rt-kernel-seeed-bsp-r3643.md) | Wiki + NVIDIA + GitHub |
 | [载板 MIPI CSI 2-lane / 4-lane](docs/faq/seeed-jetson-carrier-mipi-csi-lane-count.md) | Wiki + A608 Datasheet + Catalog |
 | [J4012 PREEMPT_RT / Ubuntu 24.04 (JP7.2 R39.2)](docs/faq/j4012-preempt-rt-kernel-ubuntu2404-jp72-r392.md) | Wiki + NVIDIA + GitHub r39.2.0 |
+| [Industrial 双网口 / PoE / BSP 核对](docs/faq/recomputer-industrial-dual-nic-poe-bsp-check.md) | Wiki Industrial Getting Started + Interfaces |
 
 ### Seeed 设备
 
@@ -57,6 +58,7 @@
 | [reServer J4012 PoE](docs/staging/reserver-industrial-j4012-poe-jetpack-6.md) | [Forum](https://forum.seeedstudio.com/t/reserver-industrial-j4012-with-jetpack-6-jetson-orin-nx-16gb-missing-gpio/279727) |
 | [reServer J4012 PoE/GPIO 记录](docs/staging/reserver-industrial-j4012-jetpack-6-gpio-poe.md) | 同上 |
 | [Jetson RTC 电池寿命与更换](docs/staging/jetson-rtc-battery-lifespan-replacement.md) | NVIDIA PMIC_BBAT 12–50 µA；CR1220 约 1–5 月 |
+| [Industrial J4012 Coram 双网口/PoE 症状](docs/staging/recomputer-industrial-j4012-coram-nic-poe.md) | 客户日志：BSP 已匹配；failover/PoE 根因待确认 |
 
 ## 结案日志
 

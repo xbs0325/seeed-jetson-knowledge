@@ -74,3 +74,9 @@
 
 - 对仓库内文件（`docs/`、`memory/`、`cases/`、`instructions/` 等）做任何本地修改后，**应及时通过 PR 提交到 GitHub 库**，不自行直接 push/merge。
 - 单次对话内的多处修改可集中为一个 draft PR，附上简要修改说明。
+
+## 渠道客户技术邮件
+
+- 经销售/Distributor 转交的批量或重点账户：先列「必须确认」清单，再写外发。
+- 外发优先澄清拓扑与症状定义（例如 “goes offline” 是设备失联还是相机断流），避免在未核实前给出硬件/RMA 口径。
+- 详见 `memory/preferences.md`「渠道 / 经销商客户」。
