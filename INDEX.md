@@ -22,6 +22,7 @@
 | [J4012 PREEMPT_RT 内核 (R36.4.3)](docs/faq/j4012-preempt-rt-kernel-seeed-bsp-r3643.md) | Wiki + NVIDIA + GitHub |
 | [载板 MIPI CSI 2-lane / 4-lane](docs/faq/seeed-jetson-carrier-mipi-csi-lane-count.md) | Wiki + A608 Datasheet + Catalog |
 | [J4012 PREEMPT_RT / Ubuntu 24.04 (JP7.2 R39.2)](docs/faq/j4012-preempt-rt-kernel-ubuntu2404-jp72-r392.md) | Wiki + NVIDIA + GitHub r39.2.0 |
+| [Industrial J4012 无 Key-E / SMD Wi-Fi](docs/faq/recomputer-industrial-j4012-wifi-no-m2-key-e.md) | Wiki + 商详 + Hardware Interfaces |
 
 ### Seeed 设备
 
