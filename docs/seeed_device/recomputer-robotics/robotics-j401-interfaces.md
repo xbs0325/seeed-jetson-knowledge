@@ -30,19 +30,22 @@ status: active
 - 主要接口：
   - 2x RJ45 Gigabit Ethernet
   - 6x USB 3.2 Type-A
-  - 1x USB 3.0 Type-C Host/DP 1.4
-  - 1x USB 2.0 Type-C Device/Debug
+  - 1x USB 3.0 Type-C Host/DP 1.4（**视频输出；无原生 HDMI**）
+  - 1x USB 2.0 Type-C Device/Debug（CP210x 串口 + Force Recovery）
   - M.2 Key M、M.2 Key E、M.2 Key B
   - CAN0/CAN1、UART、2x I2C、GMSL2 camera expansion header
   - 5V PWM fan 与 12V PWM fan
-  - 19-54V XT30(2+2) 供电
+  - 19-54V XT30(2+2) 供电（含 XT30→5525；验证建议 19V/4.74A 5525 适配器）
+  - REC DIP、PWR/RESET 针孔按键；PWR / ACT / User LED
 
 ## 刷机要点
 
 - 使用 Ubuntu host PC、Robotics J401、Jetson Orin Nano/NX 模组、主动散热、NVMe SSD、USB Type-C 数据线。
-- Seeed 提供按模组区分、带 GMSL 驱动的 JetPack 6.2 镜像。
+- Seeed 提供按模组区分、带 GMSL 驱动的 JetPack 6.2 镜像（Wiki 亦列 JetPack 7.2）。
 - 下载镜像后用 `sha256sum` 校验。
-- 进入 Force Recovery Mode 后使用 Seeed 镜像包内 initrd flash 命令刷 NVMe。
+- 进入 Force Recovery Mode：REC 拨码到 Wiki 所述 RESET/REC → 上电 → Type-C 接 Device/Debug；`lsusb` 应按模组出现 `0955:7xxx`。
+- 进入 Recovery 后使用 Seeed 镜像包内 initrd flash（`--flash-only`）刷 NVMe。
+- 显示：用 Type-C Host + DP/PD→HDMI 转接器，或 DP/PD 直连显示器。
 
 ## CAN 使用要点
 
