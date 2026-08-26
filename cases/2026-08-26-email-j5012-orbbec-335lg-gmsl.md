@@ -17,7 +17,7 @@ Zoho **## 366595 ##**。Novelic（Sara Babic）两台 reComputer Robotics J5012�
 
 1. 出厂镜像 `jetson-io.py` 闪退；`/boot/dtb/` 只有 `-0004` Robotics DTB，模组实际是 **p3701-0005**。
 2. 手工改 `extlinux.conf` 后驱动有加载，但仍无 `/dev/video*`。
-3. 按 GitHub `Linux_for_Tegra` README 步骤（r36.4.4 / `recomputer-robo-agx-orin-j501x`）刷出 `-0005` DTB，但系统里看不到 Seeed GMSL/Orbbec `.dtbo`。支持侧确认：**构建里有 overlay，但不能按 GitHub 步骤刷**；应走 Wiki 官方镜像。
+3. 按 GitHub README（r36.4.4 / `recomputer-robo-agx-orin-j501x`）刷出 `-0005` DTB，但 `/boot` 里看不到 Seeed GMSL/Orbbec `.dtbo`。源码里有 overlay DTS：https://github.com/Seeed-Studio/Linux_for_Tegra/blob/r36.4.3/source/hardware/nvidia/t23x/nv-public/overlay/tegra234-seeed-orbbec-335lg-overlay.dts
 4. 误装 Orbbec `copy_to_target_agx_orin_fg96.sh`（MAX9296，不是板上 MAX96712）。
 5. 问 `reserver-agx-orin-j501x-gmsl.conf` 的 `-0005-reserver-gmsl.dtb` 能否用在 Robotics J5012。
 
@@ -27,13 +27,13 @@ Zoho **## 366595 ##**。Novelic（Sara Babic）两台 reComputer Robotics J5012�
 
 客户自行确认已解决：
 
-1. **镜像（对客户次要）**：Wiki 官方镜像路径可用。内部口径：overlay 在 BSP 构建里有，不要按 GitHub README 步骤刷。
-2. **SDK（对外重点）**：OrbbecSDK/OrbbecViewer **v2.9.3** 在 GMSL 下设备列表为空、无法取流；降到文档指定的 **v2.4.8** 立即正常。USB 模式两个版本都不受影响。客户将固定使用 v2.4.8，并建议 Wiki 把版本钉得更醒目。
+1. **镜像**：Wiki 官方镜像同时带匹配 DTB 和 overlay，GMSL 能起来。内部口径：源码有 DTS，不要说「GitHub 通用构建不能替代官方镜像」；应说请走 Wiki 刷机步骤，不要只跟 GitHub README。
+2. **SDK**：OrbbecSDK/OrbbecViewer **v2.9.3** 在 GMSL 下设备列表为空、无法取流；降到 Wiki 安装步骤里的 **v2.4.8** 立即正常。USB 模式两个版本都不受影响。客户将固定使用 v2.4.8，并建议 Wiki 把版本钉得更醒目。
 
 ## 答复要点
 
-- 外发以感谢 + 记录 SDK **v2.4.8** 为主，不展开 GitHub 构建缺 overlay 的说法。
-- 不把 v2.9.3 写成「已确认的 Orbbec SDK bug」；只强调文档路径是 v2.4.8。Wiki [orbbec_gemini_335lg](https://wiki.seeedstudio.com/orbbec_gemini_335lg/) 下载已钉 v2.4.8，但没有「不要用更新版本」的警告。
+- 外发两条都留：Wiki 官方镜像路径 + SDK **v2.4.8**。第一点不要写成源码没有设备树。
+- 不把 v2.9.3 写成「已确认的 Orbbec SDK bug」。
 - PR：https://github.com/xbs0325/seeed-jetson-knowledge/pull/48
 
 ## 知识库更新
@@ -48,4 +48,5 @@ Zoho **## 366595 ##**。Novelic（Sara Babic）两台 reComputer Robotics J5012�
 - https://wiki.seeedstudio.com/ai_robotics_recomputer_j501_robotics_getting_started/
 - https://wiki.seeedstudio.com/orbbec_gemini_335lg/
 - https://github.com/orbbec/OrbbecSDK_v2/releases/tag/v2.4.8
+- https://github.com/Seeed-Studio/Linux_for_Tegra/blob/r36.4.3/source/hardware/nvidia/t23x/nv-public/overlay/tegra234-seeed-orbbec-335lg-overlay.dts
 - Zoho ## 366595 ## / Sara Babic（Novelic）2026-08-25 结案邮件
