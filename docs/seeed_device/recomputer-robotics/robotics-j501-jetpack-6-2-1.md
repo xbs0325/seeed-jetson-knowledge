@@ -60,8 +60,7 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --netwo
 ```
 
 - 镜像文件约 14.2GB，应使用 Seeed Wiki 提供的 SHA256 值核对完整性。
-- 做 GMSL 时必须下 **对应模组容量** 的 Wiki GMSL 镜像（J5012 / AGX Orin 64GB 不要用 32GB 行）。该官方包同时带 Robotics 匹配 DTB 与 Seeed GMSL/Orbbec `.dtbo`。
-- 公共 GitHub `Linux_for_Tegra` 通用构建、`reserver-agx-orin-j501x-gmsl.conf`、Orbbec MAX9296 脚本都不是 J501 GMSL 的替代路径。详见 [J501 Orbbec 335Lg GMSL FAQ](../../faq/j501-orbbec-335lg-gmsl-wiki-image-sdk-248.md)。
+- 做 GMSL 时按 Wiki 下 **对应模组容量** 的官方 GMSL 镜像（J5012 / AGX Orin 64GB 不要用 32GB 行）。GMSL overlay 在 BSP 构建里是有的，但**不要按 GitHub `Linux_for_Tegra` README 步骤刷**。`reserver-agx-orin-j501x-gmsl.conf`、Orbbec MAX9296 脚本也不是 J501 路径。详见 [J501 Orbbec 335Lg GMSL FAQ](../../faq/j501-orbbec-335lg-gmsl-wiki-image-sdk-248.md)。
 
 ## GMSL / Orbbec 335Lg 要点
 
