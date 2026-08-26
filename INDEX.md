@@ -20,6 +20,7 @@
 | [AGX Orin 64GB 规格书](docs/faq/agx-orin-64gb-developer-kit-datasheet.md) | NVIDIA |
 | [Orin Nano 无 SD 镜像 (JP7.2)](docs/faq/orin-nano-jetpack-7-2-no-sd-card-image.md) | NVIDIA |
 | [J4012 PREEMPT_RT 内核 (R36.4.3)](docs/faq/j4012-preempt-rt-kernel-seeed-bsp-r3643.md) | Wiki + NVIDIA + GitHub |
+| [J501 Orbbec 335Lg GMSL（Wiki 镜像 + SDK 2.4.8）](docs/faq/j501-orbbec-335lg-gmsl-wiki-image-sdk-248.md) | Wiki + 客户确认 |
 | [载板 MIPI CSI 2-lane / 4-lane](docs/faq/seeed-jetson-carrier-mipi-csi-lane-count.md) | Wiki + A608 Datasheet + Catalog |
 | [J4012 PREEMPT_RT / Ubuntu 24.04 (JP7.2 R39.2)](docs/faq/j4012-preempt-rt-kernel-ubuntu2404-jp72-r392.md) | Wiki + NVIDIA + GitHub r39.2.0 |
 

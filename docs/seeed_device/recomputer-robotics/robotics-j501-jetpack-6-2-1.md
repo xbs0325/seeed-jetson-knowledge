@@ -37,7 +37,7 @@ status: active
 - 2x M.2 Key M NVMe、M.2 Key E、M.2 Key B。
 - 3x USB 3.0 Type-A、USB Type-C recovery、USB Type-C debug UART。
 - 4x CAN-FD（2 native + 2 SPI-to-CAN），带电气隔离。
-- 可选 GMSL2：页面规格列出 Mini-Fakra/GMSL2 扩展，可支持多路 GMSL2 摄像头方案。
+- 可选 GMSL2：页面规格列出 Mini-Fakra/GMSL2 扩展（解串器 **MAX96712**），可支持多路 GMSL2 摄像头方案。已列出相机含 SG3S/SG2/SG8S 与 **Orbbec Gemini 335Lg**。
 - DI/DO、I2S、UART、RS485、HDMI 2.1、RTC、风扇与 19-48V DC 输入。
 
 ## J501 Mini 关键接口
@@ -60,6 +60,14 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --netwo
 ```
 
 - 镜像文件约 14.2GB，应使用 Seeed Wiki 提供的 SHA256 值核对完整性。
+- 做 GMSL 时必须下 **对应模组容量** 的 Wiki GMSL 镜像（J5012 / AGX Orin 64GB 不要用 32GB 行）。该官方包同时带 Robotics 匹配 DTB 与 Seeed GMSL/Orbbec `.dtbo`。
+- 公共 GitHub `Linux_for_Tegra` 通用构建、`reserver-agx-orin-j501x-gmsl.conf`、Orbbec MAX9296 脚本都不是 J501 GMSL 的替代路径。详见 [J501 Orbbec 335Lg GMSL FAQ](../../faq/j501-orbbec-335lg-gmsl-wiki-image-sdk-248.md)。
+
+## GMSL / Orbbec 335Lg 要点
+
+- 启用前需已刷带 GMSL 驱动的 Wiki 镜像；然后 `sudo /opt/nvidia/jetson-io/jetson-io.py`，按相机选 overlay（Orbbec 选 **Orbbec Gemini 335Lg**），重启。
+- Orbbec 335Lg：DIP **M** = GMSL，**U** = USB。GMSL 取流使用 Wiki 指定的 **OrbbecSDK / OrbbecViewer v2.4.8**，不要默认装最新版。
+- `jetson-io.py` 闪退、只有 `-0004` DTB 而模组是 `-0005`：优先重刷 Wiki 官方镜像，不要手工拼 overlay 或混用 reServer DTB。
 
 ## 售后提示
 
@@ -69,4 +77,6 @@ J501/J501 Mini 是 Seeed 自定义机器人载板/整机方案，GMSL、CAN、DI
 
 - [reComputer Robotics J501 Wiki](https://wiki.seeedstudio.com/ai_robotics_recomputer_j501_robotics_getting_started/)
 - [Robotics J501 Mini Wiki](https://wiki.seeedstudio.com/recomputer_j501_mini_getting_started/)
+- [Orbbec Gemini 335Lg Wiki](https://wiki.seeedstudio.com/orbbec_gemini_335lg/)
+- [J501 Orbbec 335Lg GMSL FAQ](../../faq/j501-orbbec-335lg-gmsl-wiki-image-sdk-248.md)
 - [Seeed Linux_for_Tegra](https://github.com/Seeed-Studio/Linux_for_Tegra)
